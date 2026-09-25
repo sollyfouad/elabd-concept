@@ -1,0 +1,27 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ProductCard from '../../components/ProductCard.astro';
+import site from '../../data/site.json';
+import { ar, allProducts } from '../../lib/format.js';
+
+export function getStaticPaths() {
+  return site.categories.map((c) => ({ params: { slug: c.slug }, props: { c } }));
+}
+const { c } = Astro.props;
+const { ui, contact } = site;
+const products = allProducts.filter((p) => p.category === c.slug);
+const desc = `${ui.pages.category.description_prefix} ${c.ar} من حلواني العبد${c.sub_ar.length ? `: ${c.sub_ar.join('، ')}` : ''}.`;
+---
+<Layout title={`${c.ar} ${ui.pages.category.title_suffix}`} description={desc}>
+  <div class="mx-auto max-w-6xl px-4 pt-12">
+    <nav aria-label="مسار الصفحة" class="text-sm"><a href="/menu" class="text-maroon underline underline-offset-4">{ui.pages.menu.h1}</a> / <span aria-current="page">{c.ar}</span></nav>
+    <h1 class="mt-3 font-display text-maroon text-6xl">{c.ar}</h1>
+    {c.sub_ar.length > 0 &&
+      <ul class="mt-6 flex flex-wrap gap-2">
+        {c.sub_ar.map((s) => <li class="bg-rose text-maroon px-3 py-1 font-semibold">{s}</li>)}
+      </ul>}
+    {products.length > 0
+      ? <ul class="mt-10 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">{products.map((p) => <li><ProductCard p={p} /></li>)}</ul>
+      : <p class="mt-10 text-lg">{/* TODO: no products for this category in site.json */}{ui.no_products_ar} <a href={`tel:${contact.hotline}`} class="font-semibold text-maroon underline underline-offset-4">{ar(contact.hotline)}</a></p>}
+  </div>
+</Layout>

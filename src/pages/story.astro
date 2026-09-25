@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import site from '../data/site.json';
+import { ar } from '../lib/format.js';
+const pg = site.ui.pages.story;
+---
+<Layout title={pg.title} description={pg.description}>
+  <div class="mx-auto max-w-3xl px-4 pt-12">
+    <h1 class="font-display text-maroon text-6xl">{pg.h1}</h1>
+    <p class="mt-3 text-lg">{pg.intro_ar}</p>
+    <!-- A real sequence, so a numbered timeline is fine here -->
+    <ol class="mt-12 border-s-4 border-kahk">
+      {site.story.map((s) => (
+        <li class="relative ps-8 pb-12 last:pb-0">
+          <span aria-hidden="true" class="absolute -start-[14px] top-3 size-6 rounded-full bg-maroon ring-4 ring-cream"></span>
+          <h2 class="font-display text-maroon text-5xl"><time datetime={String(s.year)}>{ar(s.year)}</time></h2>
+          <p class="mt-2 text-lg">{s.ar}</p>
+        </li>
+      ))}
+    </ol>
+  </div>
+</Layout>

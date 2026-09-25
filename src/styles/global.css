@@ -1,1 +1,22 @@
 @import "tailwindcss";
+
+@theme {
+  --color-maroon: #7A1E2C;
+  --color-maroon-deep: #4E111B;
+  --color-rose: #F2D6D3;
+  --color-cream: #FBF6EF;
+  --color-kahk: #C08A4E;
+  --color-qahwa: #2B1A17;
+  --font-display: "Aref Ruqaa", Amiri, serif;
+  --font-sans: "IBM Plex Sans Arabic", "Segoe UI", Tahoma, "Geeza Pro", sans-serif;
+}
+
+@layer base {
+  body { @apply bg-cream text-qahwa font-sans leading-relaxed; }
+  :focus-visible { outline: 3px solid var(--color-maroon); outline-offset: 3px; }
+  .bg-maroon-deep :focus-visible, .bg-maroon :focus-visible { outline-color: var(--color-rose); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
+}
