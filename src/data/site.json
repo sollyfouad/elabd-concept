@@ -1,0 +1,79 @@
+{
+  "concept": true,
+  "brand": {
+    "name_ar": "حلواني العبد",
+    "name_en": "El Abd Patisserie",
+    "since": 1974,
+    "tagline_ar": "الحلو صنعة",
+    "hero_ar": "الحلو الي بجد بطعم العبد",
+    "logo": "https://cdn.elabdfoods.com/abdproimages-blob/0000526_storeArabicLogo.png"
+  },
+  "contact": {
+    "hotline": "17111",
+    "hours_ar": "يومياً من ٩ صباحاً حتى ١٢ منتصف الليل",
+    "hours_en": "Daily 9:00 AM to 12:00 AM",
+    "social": {
+      "facebook": "https://www.facebook.com/ElAbdPatisserieEgypt/",
+      "instagram": "https://www.instagram.com/elabdpatisserie/",
+      "youtube": "https://www.youtube.com/channel/UCkRGhXlpCMCEUFP-lnHPdDg"
+    },
+    "real_site": "https://elabdfoods.com/home"
+  },
+  "story": [
+    { "year": 1974, "ar": "افتتاح أول فرع في شارع طلعت حرب، وسط البلد" },
+    { "year": 1996, "ar": "افتتاح فرع شارع ٢٦ يوليو، وسط البلد" },
+    { "year": 2011, "ar": "بداية التوزيع في سلاسل السوبر ماركت والهايبر ماركت: ياميش، كحك، حلاوة المولد، كوكيز" },
+    { "year": 2019, "ar": "افتتاح فرع مول العرب وبداية خطة التوسع" },
+    { "year": 2023, "ar": "افتتاح فرع سيتي سنتر ألماظة، ليصل العدد إلى ١١ فرع" }
+  ],
+  "branches_ar": ["طلعت حرب", "شارع شريف", "شبرا", "مول العرب", "الحصري", "المهندسين", "فيصل", "سيتي ستارز", "زهراء المعادي", "التجمع الخامس", "سيتي سنتر ألماظة"],
+  "seasonal": {
+    "active": "mouled",
+    "mouled": {
+      "title_ar": "حلاوة المولد",
+      "subcategories_ar": ["مولد سايب", "علب جاهزة", "مشكلت", "الملبن"],
+      "products": [
+        { "ar": "علبة مولد ٤ (٣٨ قطعة)", "en": "Mouled Box 4 (38 pcs)", "price": 570, "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002398_-_415.webp" },
+        { "ar": "علبة مولد ٣ (٤٨ قطعة)", "en": "Mouled Box 3 (48 pcs)", "price": 750, "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002397_-_415.webp" }
+      ]
+    }
+  },
+  "categories": [
+    { "slug": "bakery", "ar": "مخبوزات", "en": "Bakery", "sub_ar": ["كرواسون", "سينامون رول", "دونتس", "ساندوتشات", "حادق", "حلو", "بيتزا"], "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002415_4- 450 x 300-01_450.webp" },
+    { "slug": "western", "ar": "غربي", "en": "Western Sweets", "sub_ar": ["جاتوه", "تورت", "اكلير", "كاب", "باوند كيك", "تشيز كيك", "برطمان كيك"], "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002419_4- 450 x 300-04_450.webp" },
+    { "slug": "oriental", "ar": "شرقي", "en": "Oriental Sweets", "sub_ar": ["كنافة", "بسبوسة", "علب مشكل", "ميكس شرقي"], "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002416_4- 450 x 300-02_450.webp" },
+    { "slug": "kahk-biscuits", "ar": "كحك وبسكويت", "en": "Kahk & Biscuits", "sub_ar": ["بسكويت", "بيتي فور", "كحك", "غريبة", "منين", "شكلمة", "كحك مشكل"] },
+    { "slug": "value-packs", "ar": "عبوات التوفير", "en": "Value Packs", "sub_ar": [] },
+    { "slug": "yamish-nuts", "ar": "ياميش ومكسرات", "en": "Yamish & Nuts", "sub_ar": ["ياميش", "المكسرات المقشرة", "المكسرات المحمصة"] },
+    { "slug": "coffee", "ar": "قهوة", "en": "Coffee", "sub_ar": [], "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002417_1- 674x932-02_450.webp" },
+    { "slug": "snacks", "ar": "العبد سناكس", "en": "El Abd Snacks", "sub_ar": ["سوداني", "كوكيز", "شوكولاتة"], "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002418_4- 450 x 300-03_450.webp" },
+    { "slug": "drinks", "ar": "مشروبات", "en": "Drinks", "sub_ar": ["المشروبات الساخنة", "المشروبات الباردة", "كومبو", "مشروبات غازية"] },
+    { "slug": "ice-cream-cakes", "ar": "تورت ايس كريم", "en": "Ice Cream Cakes", "sub_ar": [] }
+  ],
+  "best_sellers": [
+    { "ar": "كرواسون شوكولاتة ميجا", "price": 55, "category": "bakery", "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000670_-_415.png" },
+    { "ar": "جاتوه سويس رول شوكولاته", "price": 50, "category": "western", "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002136_-_415.png" },
+    { "ar": "جاتوه موس شوكولاته", "price": 53, "category": "western", "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000681_-_415.png" },
+    { "ar": "جاتوه ميلفيه شوكولاته", "price": 53, "category": "western", "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000677_-_415.png" },
+    { "ar": "جاتوه ميلفيه مربى", "price": 53, "category": "western", "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000682_-_415.png" },
+    { "ar": "باتيه جبنة رومي ميجا", "price": 55, "category": "bakery", "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000673_-_415.png" },
+    { "ar": "جاتوه خوخ", "price": 50, "category": "western", "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000399_-_415.png" }
+  ],
+  "new_products": [
+    { "ar": "كرواسون كيندر", "price": 45, "category": "bakery", "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002320_-_415.webp" },
+    { "ar": "دونتس فيلد راسبيري تشيز كيك", "price": 35, "category": "bakery", "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002326_-_415.webp" },
+    { "ar": "دونتس فيلد كيندر", "price": 40, "category": "bakery", "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002327_-_415.webp" },
+    { "ar": "براونيز بقطع الشوكولاتة", "price": 55, "category": "bakery", "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002318_-_415.webp" },
+    { "ar": "دانش شوكولاتة بندق دايموند", "price": 45, "category": "bakery", "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002316_-_415.webp" },
+    { "ar": "ابل باي", "price": 65, "category": "bakery", "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002317_-_415.webp" },
+    { "ar": "ساندوتش تونة", "price": 115, "category": "bakery", "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002333_-_415.webp" },
+    { "ar": "ساندوتش سالمون مدخن", "price": 140, "category": "bakery", "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002335_-_415.webp" },
+    { "ar": "العبد كوكيز شوكولاتة 30 قطعة", "price": 175, "category": "snacks", "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001341_-30-_415.png" },
+    { "ar": "كوكيز العبد فانيليا 30 قطعة", "price": 170, "category": "snacks", "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001353_-30_415.png" },
+    { "ar": "علبة كوكيز مشكلتة تويست 30 قطعة", "price": 220, "category": "snacks", "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001835_-30-_415.webp" },
+    { "ar": "كاساتا ايس كريم فواكه صغير", "price": 230, "category": "ice-cream-cakes", "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001090_-_415.png" },
+    { "ar": "ايس كريم كاساتا شوكولاتة صغير", "price": 260, "category": "ice-cream-cakes", "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001007_-_415.png" },
+    { "ar": "تورتة ايس كريم هوني كومب", "price": 360, "category": "ice-cream-cakes", "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001433_-_415.webp" }
+  ],
+  "currency_ar": "ج.م."
+}
