@@ -398,5 +398,271 @@
         "description": "١١ فرع لحلواني العبد في القاهرة والجيزة، مفتوحين يومياً من ٩ الصبح لـ ١٢ بالليل. الخط الساخن ١٧١١١."
       }
     }
-  }
+  },
+  "catalog": [
+    {
+      "ar": "صوابع زينب",
+      "price": 115,
+      "category": "oriental",
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000750_-_415.png"
+    },
+    {
+      "ar": "مشكل شرقي مكسرات",
+      "price": 650,
+      "category": "oriental",
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001525_-_415.webp"
+    },
+    {
+      "ar": "رموش الست",
+      "price": 155,
+      "category": "oriental",
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000746_415.png"
+    },
+    {
+      "ar": "كنافة مكسرات",
+      "price": 255,
+      "category": "oriental",
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000749_-_415.png"
+    },
+    {
+      "ar": "كنافة كريمة",
+      "price": 200,
+      "category": "oriental",
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000748_-_415.png"
+    },
+    {
+      "ar": "بسبوسة بندق",
+      "price": 165,
+      "category": "oriental",
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000760_-_415.png"
+    },
+    {
+      "ar": "بسبوسة سادة",
+      "price": 140,
+      "category": "oriental",
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000745_-_415.png"
+    },
+    {
+      "ar": "ميكس غوايش كنافة نوتيلا ولوتس صغير",
+      "price": 225,
+      "category": "oriental",
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000610_-_415.png"
+    },
+    {
+      "ar": "علبة بسكويت مشكلت ٢٤ قطعة",
+      "price": 180,
+      "category": "kahk-biscuits",
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001351_-24-_415.png"
+    },
+    {
+      "ar": "علبة بسكويت شوكولاته ٣٦ قطعة",
+      "price": 170,
+      "category": "kahk-biscuits",
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001357_-36-_415.png"
+    },
+    {
+      "ar": "بيتي فور مكسرات ٣٢ قطعة",
+      "price": 245,
+      "category": "kahk-biscuits",
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001326_-32-_415.png"
+    },
+    {
+      "ar": "بيتي فور ممتاز ٣٢ قطعة",
+      "price": 190,
+      "category": "kahk-biscuits",
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001328_-32-_415.png"
+    },
+    {
+      "ar": "علبة كحك مشكلت ١٦قطعة",
+      "price": 195,
+      "category": "kahk-biscuits",
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001334_-16_415.png"
+    },
+    {
+      "ar": "غريبة باللوز ٣٦ قطعة",
+      "price": 270,
+      "category": "kahk-biscuits",
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001330_-36-_415.png"
+    },
+    {
+      "ar": "منين عجوة ٢٦ قطعة",
+      "price": 180,
+      "category": "kahk-biscuits",
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001321_-26-_415.png"
+    },
+    {
+      "ar": "منين سادة ٣٢ قطعة",
+      "price": 170,
+      "category": "kahk-biscuits",
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001322_-32-_415.png"
+    },
+    {
+      "ar": "عبوة السعادة والتوفير ٣ قطع جاتوه",
+      "price": 139.5,
+      "price_to": 167.4,
+      "category": "value-packs",
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001918_-3-_415.webp"
+    },
+    {
+      "ar": "عبوة السعادة والتوفير ٦ قطع جاتوه",
+      "price": 277.5,
+      "price_to": 360.75,
+      "category": "value-packs",
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001919_-6-_415.webp"
+    },
+    {
+      "ar": "عبوة السعادة والتوفير ٣ قطع دونتس",
+      "price": 91.2,
+      "price_to": 156.75,
+      "category": "value-packs",
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001920_-3-_415.webp"
+    },
+    {
+      "ar": "عبوة السعادة والتوفير ٦ قطع دونتس",
+      "price": 193.2,
+      "price_to": 303.6,
+      "category": "value-packs",
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001921_-6-_415.webp"
+    },
+    {
+      "ar": "عبوة السعادة والتوفير ٣ قطع مخبوزات",
+      "price": 128.25,
+      "price_to": 156.75,
+      "category": "value-packs",
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001923_-3-_415.webp"
+    },
+    {
+      "ar": "عبوة السعادة و التوفير ٦ قطع مخبوزات",
+      "price": 248.4,
+      "price_to": 331.2,
+      "category": "value-packs",
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001922_-6-_415.webp"
+    },
+    {
+      "ar": "قمر الدين زهرة الغوطة",
+      "price": 135,
+      "category": "yamish-nuts",
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000719_-_415.png"
+    },
+    {
+      "ar": "بلح المتوكل ٩٠٠ جم",
+      "price": 100,
+      "category": "yamish-nuts",
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001273_-900-_415.png"
+    },
+    {
+      "ar": "زبيب ١٥٠ جرام",
+      "price": 45,
+      "category": "yamish-nuts",
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001231_-150-_415.png"
+    },
+    {
+      "ar": "جوزهند ١٥٠ جم",
+      "price": 50,
+      "category": "yamish-nuts",
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001229_-150-_415.png"
+    },
+    {
+      "ar": "عين جمل ١٥٠ جرام",
+      "price": 135,
+      "category": "yamish-nuts",
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001242_-150-_415.png"
+    },
+    {
+      "ar": "كاجو محمص ١٥٠ جم",
+      "price": 175,
+      "category": "yamish-nuts",
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001246_-150-_415.png"
+    },
+    {
+      "ar": "لوز مقشر ١٥٠ جم",
+      "price": 125,
+      "category": "yamish-nuts",
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001234_-150-_415.png"
+    },
+    {
+      "ar": "فسدق محمص ١٥٠ جرام",
+      "price": 200,
+      "category": "yamish-nuts",
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001244_-150-_415.png"
+    },
+    {
+      "ar": "بن العبد سادة فاتح ٤٠ جرام",
+      "price": 50,
+      "category": "coffee",
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002223_-40-_415.webp"
+    },
+    {
+      "ar": "بن العبد سادة فاتح ١٠٠ جرام",
+      "price": 110,
+      "category": "coffee",
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002242_-100-_415.webp"
+    },
+    {
+      "ar": "بن العبد سادة وسط ٤٠ جرام",
+      "price": 50,
+      "category": "coffee",
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002222_-40-_415.webp"
+    },
+    {
+      "ar": "بن العبد سادة وسط ١٠٠ جرام",
+      "price": 110,
+      "category": "coffee",
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002253_-100-_415.webp"
+    },
+    {
+      "ar": "بن العبد سادة غامق ٤٠ جرام",
+      "price": 50,
+      "category": "coffee",
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002251_-40-_415.webp"
+    },
+    {
+      "ar": "بن العبد سادة غامق ١٠٠ جرام",
+      "price": 110,
+      "category": "coffee",
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002252_-100-_415.webp"
+    },
+    {
+      "ar": "ايس كراميل لاتيه - وسط",
+      "price": 100,
+      "category": "drinks",
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000979_-_415.png"
+    },
+    {
+      "ar": "لاتيه فرابيه صغير",
+      "price": 80,
+      "category": "drinks",
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000508_-_415.png"
+    },
+    {
+      "ar": "امريكان كوفى - وسط",
+      "price": 65,
+      "category": "drinks",
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000466_-_415.png"
+    },
+    {
+      "ar": "شاى باللبن صغير",
+      "price": 40,
+      "category": "drinks",
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000473_-_415.png"
+    },
+    {
+      "ar": "فلات وايت - صغير",
+      "price": 95,
+      "category": "drinks",
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000474_-_415.png"
+    },
+    {
+      "ar": "شاى احمر - صغير",
+      "price": 25,
+      "category": "drinks",
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000467_-_415.png"
+    },
+    {
+      "ar": "موكا - صغير",
+      "price": 80,
+      "category": "drinks",
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000486_-_415.png"
+    }
+  ]
 }
