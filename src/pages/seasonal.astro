@@ -1,27 +1,4 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import ProductCard from '../components/ProductCard.astro';
-import site from '../data/site.json';
-import { ar } from '../lib/format.js';
-// TODO: only Mouled has content in site.json; Eid kahk and Ramadan yamish collections need data.
-const season = site.seasonal[site.seasonal.active];
-const pg = site.ui.pages.seasonal;
-const { ui, contact } = site;
+import SeasonalView from '../components/views/SeasonalView.astro';
 ---
-<Layout title={pg.title} description={pg.description}>
-  <div class="bg-maroon-deep text-cream">
-    <div class="mx-auto max-w-6xl px-4 py-16">
-      <h1 class="font-display text-6xl md:text-7xl">{season.title_ar}</h1>
-      <p class="mt-4 max-w-xl text-lg text-rose">{pg.intro_ar}</p>
-      <ul class="mt-6 flex flex-wrap gap-2">
-        {season.subcategories_ar.map((s) => <li class="border border-rose/50 text-rose px-3 py-1">{s}</li>)}
-      </ul>
-      <a href={`tel:${contact.hotline}`} class="mt-8 inline-block bg-rose text-maroon-deep font-semibold text-lg px-6 py-3 hover:bg-cream transition-colors">{ui.order_ar} {ar(contact.hotline)}</a>
-    </div>
-  </div>
-  <section class="mx-auto max-w-6xl px-4 py-14" aria-label={season.title_ar}>
-    <ul class="grid grid-cols-2 md:grid-cols-4 gap-6">
-      {season.products.map((p) => <li><ProductCard p={p} /></li>)}
-    </ul>
-  </section>
-</Layout>
+<SeasonalView lang={Astro.currentLocale} />

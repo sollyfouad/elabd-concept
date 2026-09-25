@@ -6,7 +6,9 @@
     "since": 1974,
     "tagline_ar": "الحلو صنعة",
     "hero_ar": "الحلو الي بجد بطعم العبد",
-    "logo": "https://cdn.elabdfoods.com/abdproimages-blob/0000526_storeArabicLogo.png"
+    "logo": "https://cdn.elabdfoods.com/abdproimages-blob/0000526_storeArabicLogo.png",
+    "tagline_en": "Sweets are a craft",
+    "hero_en": "Real sweets, the El Abd way"
   },
   "contact": {
     "hotline": "17111",
@@ -22,23 +24,28 @@
   "story": [
     {
       "year": 1974,
-      "ar": "افتتاح أول فرع في شارع طلعت حرب، وسط البلد"
+      "ar": "افتتاح أول فرع في شارع طلعت حرب، وسط البلد",
+      "en": "Opened our first branch on Talaat Harb Street, Downtown Cairo"
     },
     {
       "year": 1996,
-      "ar": "افتتاح فرع شارع ٢٦ يوليو، وسط البلد"
+      "ar": "افتتاح فرع شارع ٢٦ يوليو، وسط البلد",
+      "en": "Opened the 26th of July Street branch, Downtown"
     },
     {
       "year": 2011,
-      "ar": "بداية التوزيع في سلاسل السوبر ماركت والهايبر ماركت: ياميش، كحك، حلاوة المولد، كوكيز"
+      "ar": "بداية التوزيع في سلاسل السوبر ماركت والهايبر ماركت: ياميش، كحك، حلاوة المولد، كوكيز",
+      "en": "Started supplying supermarket and hypermarket chains: yamish, kahk, Halawet El Mouled and cookies"
     },
     {
       "year": 2019,
-      "ar": "افتتاح فرع مول العرب وبداية خطة التوسع"
+      "ar": "افتتاح فرع مول العرب وبداية خطة التوسع",
+      "en": "Opened the Mall of Arabia branch and began our expansion plan"
     },
     {
       "year": 2023,
-      "ar": "افتتاح فرع سيتي سنتر ألماظة، ليصل العدد إلى ١١ فرع"
+      "ar": "افتتاح فرع سيتي سنتر ألماظة، ليصل العدد إلى ١١ فرع",
+      "en": "Opened the City Centre Almaza branch, bringing us to 11 branches"
     }
   ],
   "branches_ar": [
@@ -77,6 +84,13 @@
           "price": 750,
           "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002397_-_415.webp"
         }
+      ],
+      "title_en": "Halawet El Mouled",
+      "subcategories_en": [
+        "Loose Mouled Sweets",
+        "Ready-made Boxes",
+        "Assorted",
+        "Malban"
       ]
     }
   },
@@ -94,7 +108,16 @@
         "حلو",
         "بيتزا"
       ],
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002415_4-%20450%20x%20300-01_450.webp"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002415_4-%20450%20x%20300-01_450.webp",
+      "sub_en": [
+        "Croissants",
+        "Cinnamon Rolls",
+        "Donuts",
+        "Sandwiches",
+        "Savory",
+        "Sweet",
+        "Pizza"
+      ]
     },
     {
       "slug": "western",
@@ -109,7 +132,16 @@
         "تشيز كيك",
         "برطمان كيك"
       ],
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002419_4-%20450%20x%20300-04_450.webp"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002419_4-%20450%20x%20300-04_450.webp",
+      "sub_en": [
+        "Gateaux",
+        "Tortes",
+        "Eclairs",
+        "Cups",
+        "Pound Cake",
+        "Cheesecake",
+        "Jar Cakes"
+      ]
     },
     {
       "slug": "oriental",
@@ -121,7 +153,13 @@
         "علب مشكل",
         "ميكس شرقي"
       ],
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002416_4-%20450%20x%20300-02_450.webp"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002416_4-%20450%20x%20300-02_450.webp",
+      "sub_en": [
+        "Kunafa",
+        "Basbousa",
+        "Assorted Boxes",
+        "Oriental Mix"
+      ]
     },
     {
       "slug": "kahk-biscuits",
@@ -135,13 +173,23 @@
         "منين",
         "شكلمة",
         "كحك مشكل"
+      ],
+      "sub_en": [
+        "Biscuits",
+        "Petit Four",
+        "Kahk",
+        "Ghorayeba",
+        "Menen",
+        "Shoklama",
+        "Assorted Kahk"
       ]
     },
     {
       "slug": "value-packs",
       "ar": "عبوات التوفير",
       "en": "Value Packs",
-      "sub_ar": []
+      "sub_ar": [],
+      "sub_en": []
     },
     {
       "slug": "yamish-nuts",
@@ -151,6 +199,11 @@
         "ياميش",
         "المكسرات المقشرة",
         "المكسرات المحمصة"
+      ],
+      "sub_en": [
+        "Yamish",
+        "Peeled Nuts",
+        "Roasted Nuts"
       ]
     },
     {
@@ -158,7 +211,8 @@
       "ar": "قهوة",
       "en": "Coffee",
       "sub_ar": [],
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002417_1-%20674x932-02_450.webp"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002417_1-%20674x932-02_450.webp",
+      "sub_en": []
     },
     {
       "slug": "snacks",
@@ -169,7 +223,12 @@
         "كوكيز",
         "شوكولاتة"
       ],
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002418_4-%20450%20x%20300-03_450.webp"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002418_4-%20450%20x%20300-03_450.webp",
+      "sub_en": [
+        "Peanuts",
+        "Cookies",
+        "Chocolate"
+      ]
     },
     {
       "slug": "drinks",
@@ -180,13 +239,20 @@
         "المشروبات الباردة",
         "كومبو",
         "مشروبات غازية"
+      ],
+      "sub_en": [
+        "Hot Drinks",
+        "Cold Drinks",
+        "Combos",
+        "Soft Drinks"
       ]
     },
     {
       "slug": "ice-cream-cakes",
       "ar": "تورت ايس كريم",
       "en": "Ice Cream Cakes",
-      "sub_ar": []
+      "sub_ar": [],
+      "sub_en": []
     }
   ],
   "best_sellers": [
@@ -194,43 +260,50 @@
       "ar": "كرواسون شوكولاتة ميجا",
       "price": 55,
       "category": "bakery",
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000670_-_415.png"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000670_-_415.png",
+      "en": "Mega Chocolate Croissant"
     },
     {
       "ar": "جاتوه سويس رول شوكولاته",
       "price": 50,
       "category": "western",
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002136_-_415.png"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002136_-_415.png",
+      "en": "Chocolate Swiss Roll Gateau"
     },
     {
       "ar": "جاتوه موس شوكولاته",
       "price": 53,
       "category": "western",
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000681_-_415.png"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000681_-_415.png",
+      "en": "Chocolate Mousse Gateau"
     },
     {
       "ar": "جاتوه ميلفيه شوكولاته",
       "price": 53,
       "category": "western",
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000677_-_415.png"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000677_-_415.png",
+      "en": "Chocolate Mille-feuille Gateau"
     },
     {
       "ar": "جاتوه ميلفيه مربى",
       "price": 53,
       "category": "western",
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000682_-_415.png"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000682_-_415.png",
+      "en": "Jam Mille-feuille Gateau"
     },
     {
       "ar": "باتيه جبنة رومي ميجا",
       "price": 55,
       "category": "bakery",
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000673_-_415.png"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000673_-_415.png",
+      "en": "Mega Roumi Cheese Pateh"
     },
     {
       "ar": "جاتوه خوخ",
       "price": 50,
       "category": "western",
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000399_-_415.png"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000399_-_415.png",
+      "en": "Peach Gateau"
     }
   ],
   "new_products": [
@@ -238,85 +311,99 @@
       "ar": "كرواسون كيندر",
       "price": 45,
       "category": "bakery",
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002320_-_415.webp"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002320_-_415.webp",
+      "en": "Kinder Croissant"
     },
     {
       "ar": "دونتس فيلد راسبيري تشيز كيك",
       "price": 35,
       "category": "bakery",
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002326_-_415.webp"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002326_-_415.webp",
+      "en": "Raspberry Cheesecake Filled Donut"
     },
     {
       "ar": "دونتس فيلد كيندر",
       "price": 40,
       "category": "bakery",
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002327_-_415.webp"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002327_-_415.webp",
+      "en": "Kinder Filled Donut"
     },
     {
       "ar": "براونيز بقطع الشوكولاتة",
       "price": 55,
       "category": "bakery",
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002318_-_415.webp"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002318_-_415.webp",
+      "en": "Chocolate Chunk Brownies"
     },
     {
       "ar": "دانش شوكولاتة بندق دايموند",
       "price": 45,
       "category": "bakery",
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002316_-_415.webp"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002316_-_415.webp",
+      "en": "Chocolate Hazelnut Diamond Danish"
     },
     {
       "ar": "ابل باي",
       "price": 65,
       "category": "bakery",
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002317_-_415.webp"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002317_-_415.webp",
+      "en": "Apple Pie"
     },
     {
       "ar": "ساندوتش تونة",
       "price": 115,
       "category": "bakery",
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002333_-_415.webp"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002333_-_415.webp",
+      "en": "Tuna Sandwich"
     },
     {
       "ar": "ساندوتش سالمون مدخن",
       "price": 140,
       "category": "bakery",
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002335_-_415.webp"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002335_-_415.webp",
+      "en": "Smoked Salmon Sandwich"
     },
     {
       "ar": "العبد كوكيز شوكولاتة ٣٠ قطعة",
       "price": 175,
       "category": "snacks",
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001341_-30-_415.png"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001341_-30-_415.png",
+      "en": "El Abd Chocolate Cookies (30 pcs)"
     },
     {
       "ar": "كوكيز العبد فانيليا ٣٠ قطعة",
       "price": 170,
       "category": "snacks",
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001353_-30_415.png"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001353_-30_415.png",
+      "en": "El Abd Vanilla Cookies (30 pcs)"
     },
     {
       "ar": "علبة كوكيز مشكلتة تويست ٣٠ قطعة",
       "price": 220,
       "category": "snacks",
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001835_-30-_415.webp"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001835_-30-_415.webp",
+      "en": "Twist Assorted Cookies Box (30 pcs)"
     },
     {
       "ar": "كاساتا ايس كريم فواكه صغير",
       "price": 230,
       "category": "ice-cream-cakes",
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001090_-_415.png"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001090_-_415.png",
+      "en": "Fruit Cassata Ice Cream, Small"
     },
     {
       "ar": "ايس كريم كاساتا شوكولاتة صغير",
       "price": 260,
       "category": "ice-cream-cakes",
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001007_-_415.png"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001007_-_415.png",
+      "en": "Chocolate Cassata Ice Cream, Small"
     },
     {
       "ar": "تورتة ايس كريم هوني كومب",
       "price": 360,
       "category": "ice-cream-cakes",
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001433_-_415.webp"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001433_-_415.webp",
+      "en": "Honeycomb Ice Cream Cake"
     }
   ],
   "currency_ar": "ج.م.",
@@ -324,23 +411,28 @@
     "nav": [
       {
         "href": "/",
-        "ar": "الرئيسية"
+        "ar": "الرئيسية",
+        "en": "Home"
       },
       {
         "href": "/menu",
-        "ar": "المنيو"
+        "ar": "المنيو",
+        "en": "Menu"
       },
       {
         "href": "/seasonal",
-        "ar": "المواسم"
+        "ar": "المواسم",
+        "en": "Seasons"
       },
       {
         "href": "/story",
-        "ar": "حكايتنا"
+        "ar": "حكايتنا",
+        "en": "Our Story"
       },
       {
         "href": "/branches",
-        "ar": "الفروع"
+        "ar": "الفروع",
+        "en": "Branches"
       }
     ],
     "menu_toggle_ar": "القائمة",
@@ -364,305 +456,415 @@
       "heritage_p_ar": "أكتر من خمسين سنة بنعمل الحلو بنفس الصنعة، من أول فرع في وسط البلد لحد ما بقينا في كل حتة في القاهرة والجيزة.",
       "heritage_cta_ar": "اقرا الحكاية",
       "branches_h_ar": "أقرب فرع ليك",
-      "branches_cta_ar": "كل الفروع"
+      "branches_cta_ar": "كل الفروع",
+      "intro_en": "From a Talaat Harb shop window in 1974 to 11 branches across Cairo and Giza: oriental and western sweets, fresh bakery every day, and the Eid kahk and Halawet El Mouled you wait for all year.",
+      "categories_h_en": "What are you craving today?",
+      "best_h_en": "Best sellers",
+      "seasonal_cta_en": "See all Halawet El Mouled",
+      "heritage_h_en": "From Talaat Harb to 11 branches",
+      "heritage_p_en": "More than fifty years of making sweets with the same craft, from our first branch downtown to every corner of Cairo and Giza.",
+      "heritage_cta_en": "Read our story",
+      "branches_h_en": "Your nearest branch",
+      "branches_cta_en": "All branches"
     },
     "pages": {
       "home": {
-        "title": "حلواني العبد | الحلو صنعة منذ ١٩٧٤",
-        "description": "حلواني العبد منذ ١٩٧٤: حلويات شرقية وغربية، مخبوزات طازة، كحك العيد وحلاوة المولد. ١١ فرع في القاهرة والجيزة. اطلب على ١٧١١١."
+        "title_ar": "حلواني العبد | الحلو صنعة منذ ١٩٧٤",
+        "description_ar": "حلواني العبد منذ ١٩٧٤: حلويات شرقية وغربية، مخبوزات طازة، كحك العيد وحلاوة المولد. ١١ فرع في القاهرة والجيزة. اطلب على ١٧١١١.",
+        "title_en": "El Abd Patisserie | Sweets are a craft since 1974",
+        "description_en": "El Abd Patisserie since 1974: oriental and western sweets, fresh bakery, Eid kahk and Halawet El Mouled. 11 branches in Cairo and Giza. Order on 17111."
       },
       "menu": {
-        "title": "المنيو | حلواني العبد",
-        "h1": "المنيو",
-        "description": "كل أقسام حلواني العبد: مخبوزات، غربي، شرقي، كحك وبسكويت، ياميش ومكسرات، قهوة، مشروبات وتورت ايس كريم، بالأسعار.",
-        "intro_ar": "اختار القسم، وكلمنا على الخط الساخن ونوصلك."
+        "intro_ar": "اختار القسم، وكلمنا على الخط الساخن ونوصلك.",
+        "title_ar": "المنيو | حلواني العبد",
+        "h1_ar": "المنيو",
+        "description_ar": "كل أقسام حلواني العبد: مخبوزات، غربي، شرقي، كحك وبسكويت، ياميش ومكسرات، قهوة، مشروبات وتورت ايس كريم، بالأسعار.",
+        "title_en": "Menu | El Abd Patisserie",
+        "h1_en": "Menu",
+        "description_en": "Every El Abd Patisserie section with prices: bakery, western and oriental sweets, kahk and biscuits, yamish and nuts, coffee, drinks and ice cream cakes.",
+        "intro_en": "Pick a section, call our hotline and we'll deliver."
       },
       "category": {
-        "title_suffix": "| منيو حلواني العبد",
-        "description_prefix": "أصناف وأسعار قسم"
+        "title_suffix_ar": "| منيو حلواني العبد",
+        "description_prefix_ar": "أصناف وأسعار قسم",
+        "title_suffix_en": "| El Abd Patisserie Menu",
+        "description_prefix_en": "Items and prices in the",
+        "description_from_ar": "من حلواني العبد",
+        "description_from_en": "section at El Abd Patisserie"
       },
       "seasonal": {
-        "title": "حلاوة المولد | حلواني العبد",
-        "description": "حلاوة المولد من حلواني العبد: مولد سايب، علب جاهزة، مشكلت والملبن. اطلب على ١٧١١١.",
-        "intro_ar": "موسم المولد عندنا ليه طعم تاني. علب جاهزة للهدايا، ومولد سايب تختاره على مزاجك."
+        "intro_ar": "موسم المولد عندنا ليه طعم تاني. علب جاهزة للهدايا، ومولد سايب تختاره على مزاجك.",
+        "title_ar": "حلاوة المولد | حلواني العبد",
+        "description_ar": "حلاوة المولد من حلواني العبد: مولد سايب، علب جاهزة، مشكلت والملبن. اطلب على ١٧١١١.",
+        "title_en": "Halawet El Mouled | El Abd Patisserie",
+        "description_en": "Halawet El Mouled from El Abd Patisserie: loose mouled sweets, ready-made boxes, assorted and malban. Order on 17111.",
+        "intro_en": "Mouled season tastes different here. Ready-made gift boxes, or loose sweets picked to your liking."
       },
       "story": {
-        "title": "حكايتنا من ١٩٧٤ | حلواني العبد",
-        "h1": "حكايتنا",
-        "description": "حكاية حلواني العبد من أول فرع في شارع طلعت حرب سنة ١٩٧٤ لحد ١١ فرع في القاهرة والجيزة.",
-        "intro_ar": "بدأت الحكاية بفاترينة واحدة في وسط البلد."
+        "intro_ar": "بدأت الحكاية بفاترينة واحدة في وسط البلد.",
+        "title_ar": "حكايتنا من ١٩٧٤ | حلواني العبد",
+        "h1_ar": "حكايتنا",
+        "description_ar": "حكاية حلواني العبد من أول فرع في شارع طلعت حرب سنة ١٩٧٤ لحد ١١ فرع في القاهرة والجيزة.",
+        "title_en": "Our Story Since 1974 | El Abd Patisserie",
+        "h1_en": "Our Story",
+        "description_en": "The El Abd Patisserie story, from the first branch on Talaat Harb Street in 1974 to 11 branches across Cairo and Giza.",
+        "intro_en": "It all started with a single shop window downtown."
       },
       "branches": {
-        "title": "الفروع | حلواني العبد",
-        "h1": "فروعنا",
-        "description": "١١ فرع لحلواني العبد في القاهرة والجيزة، مفتوحين يومياً من ٩ الصبح لـ ١٢ بالليل. الخط الساخن ١٧١١١."
+        "title_ar": "الفروع | حلواني العبد",
+        "h1_ar": "فروعنا",
+        "description_ar": "١١ فرع لحلواني العبد في القاهرة والجيزة، مفتوحين يومياً من ٩ الصبح لـ ١٢ بالليل. الخط الساخن ١٧١١١.",
+        "title_en": "Branches | El Abd Patisserie",
+        "h1_en": "Our Branches",
+        "description_en": "11 El Abd Patisserie branches in Cairo and Giza, open daily from 9 AM to midnight. Hotline 17111."
       }
-    }
+    },
+    "menu_toggle_en": "Browse",
+    "skip_en": "Skip to content",
+    "order_en": "Order on",
+    "view_menu_en": "See the menu",
+    "view_category_en": "See all",
+    "hotline_label_en": "Hotline",
+    "hours_label_en": "Opening hours",
+    "no_products_en": "These items are available at our branches and on the hotline.",
+    "map_link_en": "View on map",
+    "concept_note_en": "Unofficial concept design for demonstration only, not affiliated with El Abd Patisserie.",
+    "real_site_en": "Official website",
+    "follow_en": "Follow us",
+    "since_ar": "منذ",
+    "since_en": "Since",
+    "nav_label_ar": "الرئيسية",
+    "nav_label_en": "Main",
+    "menu_sections_label_ar": "أقسام المنيو",
+    "menu_sections_label_en": "Menu sections",
+    "breadcrumb_label_ar": "مسار الصفحة",
+    "breadcrumb_label_en": "Breadcrumb",
+    "list_sep_ar": "، ",
+    "list_sep_en": ", ",
+    "lang_switch_ar": "English",
+    "lang_switch_en": "العربية"
   },
   "catalog": [
     {
       "ar": "صوابع زينب",
       "price": 115,
       "category": "oriental",
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000750_-_415.png"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000750_-_415.png",
+      "en": "Sawabe Zeinab"
     },
     {
       "ar": "مشكل شرقي مكسرات",
       "price": 650,
       "category": "oriental",
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001525_-_415.webp"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001525_-_415.webp",
+      "en": "Assorted Oriental Sweets with Nuts"
     },
     {
       "ar": "رموش الست",
       "price": 155,
       "category": "oriental",
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000746_415.png"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000746_415.png",
+      "en": "Rumoush El Set"
     },
     {
       "ar": "كنافة مكسرات",
       "price": 255,
       "category": "oriental",
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000749_-_415.png"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000749_-_415.png",
+      "en": "Kunafa with Nuts"
     },
     {
       "ar": "كنافة كريمة",
       "price": 200,
       "category": "oriental",
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000748_-_415.png"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000748_-_415.png",
+      "en": "Kunafa with Cream"
     },
     {
       "ar": "بسبوسة بندق",
       "price": 165,
       "category": "oriental",
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000760_-_415.png"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000760_-_415.png",
+      "en": "Hazelnut Basbousa"
     },
     {
       "ar": "بسبوسة سادة",
       "price": 140,
       "category": "oriental",
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000745_-_415.png"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000745_-_415.png",
+      "en": "Plain Basbousa"
     },
     {
       "ar": "ميكس غوايش كنافة نوتيلا ولوتس صغير",
       "price": 225,
       "category": "oriental",
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000610_-_415.png"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000610_-_415.png",
+      "en": "Ghawayesh Kunafa Mix, Nutella & Lotus, Small"
     },
     {
       "ar": "علبة بسكويت مشكلت ٢٤ قطعة",
       "price": 180,
       "category": "kahk-biscuits",
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001351_-24-_415.png"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001351_-24-_415.png",
+      "en": "Assorted Biscuits Box (24 pcs)"
     },
     {
       "ar": "علبة بسكويت شوكولاته ٣٦ قطعة",
       "price": 170,
       "category": "kahk-biscuits",
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001357_-36-_415.png"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001357_-36-_415.png",
+      "en": "Chocolate Biscuits Box (36 pcs)"
     },
     {
       "ar": "بيتي فور مكسرات ٣٢ قطعة",
       "price": 245,
       "category": "kahk-biscuits",
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001326_-32-_415.png"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001326_-32-_415.png",
+      "en": "Petit Four with Nuts (32 pcs)"
     },
     {
       "ar": "بيتي فور ممتاز ٣٢ قطعة",
       "price": 190,
       "category": "kahk-biscuits",
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001328_-32-_415.png"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001328_-32-_415.png",
+      "en": "Premium Petit Four (32 pcs)"
     },
     {
       "ar": "علبة كحك مشكلت ١٦قطعة",
       "price": 195,
       "category": "kahk-biscuits",
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001334_-16_415.png"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001334_-16_415.png",
+      "en": "Assorted Kahk Box (16 pcs)"
     },
     {
       "ar": "غريبة باللوز ٣٦ قطعة",
       "price": 270,
       "category": "kahk-biscuits",
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001330_-36-_415.png"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001330_-36-_415.png",
+      "en": "Ghorayeba with Almonds (36 pcs)"
     },
     {
       "ar": "منين عجوة ٢٦ قطعة",
       "price": 180,
       "category": "kahk-biscuits",
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001321_-26-_415.png"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001321_-26-_415.png",
+      "en": "Menen with Dates (26 pcs)"
     },
     {
       "ar": "منين سادة ٣٢ قطعة",
       "price": 170,
       "category": "kahk-biscuits",
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001322_-32-_415.png"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001322_-32-_415.png",
+      "en": "Plain Menen (32 pcs)"
     },
     {
       "ar": "عبوة السعادة والتوفير ٣ قطع جاتوه",
       "price": 139.5,
       "price_to": 167.4,
       "category": "value-packs",
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001918_-3-_415.webp"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001918_-3-_415.webp",
+      "en": "Happiness Value Pack, 3 Gateaux"
     },
     {
       "ar": "عبوة السعادة والتوفير ٦ قطع جاتوه",
       "price": 277.5,
       "price_to": 360.75,
       "category": "value-packs",
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001919_-6-_415.webp"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001919_-6-_415.webp",
+      "en": "Happiness Value Pack, 6 Gateaux"
     },
     {
       "ar": "عبوة السعادة والتوفير ٣ قطع دونتس",
       "price": 91.2,
       "price_to": 156.75,
       "category": "value-packs",
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001920_-3-_415.webp"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001920_-3-_415.webp",
+      "en": "Happiness Value Pack, 3 Donuts"
     },
     {
       "ar": "عبوة السعادة والتوفير ٦ قطع دونتس",
       "price": 193.2,
       "price_to": 303.6,
       "category": "value-packs",
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001921_-6-_415.webp"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001921_-6-_415.webp",
+      "en": "Happiness Value Pack, 6 Donuts"
     },
     {
       "ar": "عبوة السعادة والتوفير ٣ قطع مخبوزات",
       "price": 128.25,
       "price_to": 156.75,
       "category": "value-packs",
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001923_-3-_415.webp"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001923_-3-_415.webp",
+      "en": "Happiness Value Pack, 3 Bakery Items"
     },
     {
       "ar": "عبوة السعادة و التوفير ٦ قطع مخبوزات",
       "price": 248.4,
       "price_to": 331.2,
       "category": "value-packs",
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001922_-6-_415.webp"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001922_-6-_415.webp",
+      "en": "Happiness Value Pack, 6 Bakery Items"
     },
     {
       "ar": "قمر الدين زهرة الغوطة",
       "price": 135,
       "category": "yamish-nuts",
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000719_-_415.png"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000719_-_415.png",
+      "en": "Amar El Din, Zahrat Al Ghouta"
     },
     {
       "ar": "بلح المتوكل ٩٠٠ جم",
       "price": 100,
       "category": "yamish-nuts",
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001273_-900-_415.png"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001273_-900-_415.png",
+      "en": "El Motawakel Dates (900 g)"
     },
     {
       "ar": "زبيب ١٥٠ جرام",
       "price": 45,
       "category": "yamish-nuts",
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001231_-150-_415.png"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001231_-150-_415.png",
+      "en": "Raisins (150 g)"
     },
     {
       "ar": "جوزهند ١٥٠ جم",
       "price": 50,
       "category": "yamish-nuts",
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001229_-150-_415.png"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001229_-150-_415.png",
+      "en": "Coconut (150 g)"
     },
     {
       "ar": "عين جمل ١٥٠ جرام",
       "price": 135,
       "category": "yamish-nuts",
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001242_-150-_415.png"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001242_-150-_415.png",
+      "en": "Walnuts (150 g)"
     },
     {
       "ar": "كاجو محمص ١٥٠ جم",
       "price": 175,
       "category": "yamish-nuts",
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001246_-150-_415.png"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001246_-150-_415.png",
+      "en": "Roasted Cashews (150 g)"
     },
     {
       "ar": "لوز مقشر ١٥٠ جم",
       "price": 125,
       "category": "yamish-nuts",
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001234_-150-_415.png"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001234_-150-_415.png",
+      "en": "Peeled Almonds (150 g)"
     },
     {
       "ar": "فسدق محمص ١٥٠ جرام",
       "price": 200,
       "category": "yamish-nuts",
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001244_-150-_415.png"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001244_-150-_415.png",
+      "en": "Roasted Pistachios (150 g)"
     },
     {
       "ar": "بن العبد سادة فاتح ٤٠ جرام",
       "price": 50,
       "category": "coffee",
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002223_-40-_415.webp"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002223_-40-_415.webp",
+      "en": "El Abd Plain Coffee, Light Roast (40 g)"
     },
     {
       "ar": "بن العبد سادة فاتح ١٠٠ جرام",
       "price": 110,
       "category": "coffee",
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002242_-100-_415.webp"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002242_-100-_415.webp",
+      "en": "El Abd Plain Coffee, Light Roast (100 g)"
     },
     {
       "ar": "بن العبد سادة وسط ٤٠ جرام",
       "price": 50,
       "category": "coffee",
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002222_-40-_415.webp"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002222_-40-_415.webp",
+      "en": "El Abd Plain Coffee, Medium Roast (40 g)"
     },
     {
       "ar": "بن العبد سادة وسط ١٠٠ جرام",
       "price": 110,
       "category": "coffee",
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002253_-100-_415.webp"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002253_-100-_415.webp",
+      "en": "El Abd Plain Coffee, Medium Roast (100 g)"
     },
     {
       "ar": "بن العبد سادة غامق ٤٠ جرام",
       "price": 50,
       "category": "coffee",
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002251_-40-_415.webp"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002251_-40-_415.webp",
+      "en": "El Abd Plain Coffee, Dark Roast (40 g)"
     },
     {
       "ar": "بن العبد سادة غامق ١٠٠ جرام",
       "price": 110,
       "category": "coffee",
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002252_-100-_415.webp"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002252_-100-_415.webp",
+      "en": "El Abd Plain Coffee, Dark Roast (100 g)"
     },
     {
       "ar": "ايس كراميل لاتيه - وسط",
       "price": 100,
       "category": "drinks",
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000979_-_415.png"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000979_-_415.png",
+      "en": "Iced Caramel Latte, Medium"
     },
     {
       "ar": "لاتيه فرابيه صغير",
       "price": 80,
       "category": "drinks",
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000508_-_415.png"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000508_-_415.png",
+      "en": "Latte Frappé, Small"
     },
     {
       "ar": "امريكان كوفى - وسط",
       "price": 65,
       "category": "drinks",
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000466_-_415.png"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000466_-_415.png",
+      "en": "American Coffee, Medium"
     },
     {
       "ar": "شاى باللبن صغير",
       "price": 40,
       "category": "drinks",
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000473_-_415.png"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000473_-_415.png",
+      "en": "Tea with Milk, Small"
     },
     {
       "ar": "فلات وايت - صغير",
       "price": 95,
       "category": "drinks",
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000474_-_415.png"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000474_-_415.png",
+      "en": "Flat White, Small"
     },
     {
       "ar": "شاى احمر - صغير",
       "price": 25,
       "category": "drinks",
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000467_-_415.png"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000467_-_415.png",
+      "en": "Black Tea, Small"
     },
     {
       "ar": "موكا - صغير",
       "price": 80,
       "category": "drinks",
-      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000486_-_415.png"
+      "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000486_-_415.png",
+      "en": "Mocha, Small"
     }
+  ],
+  "currency_en": "EGP",
+  "branches_en": [
+    "Talaat Harb",
+    "Sherif Street",
+    "Shubra",
+    "Mall of Arabia",
+    "El Hosary",
+    "Mohandessin",
+    "Faisal",
+    "City Stars",
+    "Zahraa El Maadi",
+    "Fifth Settlement",
+    "City Centre Almaza"
   ]
 }

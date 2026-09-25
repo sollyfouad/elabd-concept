@@ -1,0 +1,28 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ProductCard from '../../components/ProductCard.astro';
+import site from '../../data/site.json';
+import { t, num } from '../../lib/format.js';
+// TODO: only Mouled has content in site.json; Eid kahk and Ramadan yamish collections need data.
+const { lang } = Astro.props;
+const season = site.seasonal[site.seasonal.active];
+const pg = site.ui.pages.seasonal;
+const { ui, contact } = site;
+---
+<Layout title={t(pg, 'title', lang)} description={t(pg, 'description', lang)} lang={lang}>
+  <div class="bg-maroon-deep text-cream">
+    <div class="mx-auto max-w-6xl px-4 py-16">
+      <h1 class="font-display text-6xl md:text-7xl">{t(season, 'title', lang)}</h1>
+      <p class="mt-4 max-w-xl text-lg text-rose">{t(pg, 'intro', lang)}</p>
+      <ul class="mt-6 flex flex-wrap gap-2">
+        {t(season, 'subcategories', lang).map((s) => <li class="border border-rose/50 text-rose px-3 py-1">{s}</li>)}
+      </ul>
+      <a href={`tel:${contact.hotline}`} class="mt-8 inline-block bg-rose text-maroon-deep font-semibold text-lg px-6 py-3 hover:bg-cream transition-colors">{t(ui, 'order', lang)} {num(contact.hotline, lang)}</a>
+    </div>
+  </div>
+  <section class="mx-auto max-w-6xl px-4 py-14" aria-label={t(season, 'title', lang)}>
+    <ul class="grid grid-cols-2 md:grid-cols-4 gap-6">
+      {season.products.map((p) => <li><ProductCard p={p} lang={lang} /></li>)}
+    </ul>
+  </section>
+</Layout>

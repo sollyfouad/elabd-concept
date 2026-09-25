@@ -1,26 +1,4 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import site from '../data/site.json';
-import { ar } from '../lib/format.js';
-const pg = site.ui.pages.branches;
-const { ui, contact, brand } = site;
-// TODO: branch addresses, phone numbers and opening hours per branch are not in site.json.
-const mapUrl = (b) => `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${brand.name_ar} ${b}`)}`;
+import BranchesView from '../components/views/BranchesView.astro';
 ---
-<Layout title={pg.title} description={pg.description}>
-  <div class="mx-auto max-w-6xl px-4 pt-12">
-    <h1 class="font-display text-maroon text-6xl">{pg.h1}</h1>
-    <div class="mt-6 flex flex-wrap gap-x-10 gap-y-4 bg-rose p-6">
-      <p><span class="block font-semibold">{ui.hotline_label_ar}</span><a href={`tel:${contact.hotline}`} class="font-display text-maroon text-5xl">{ar(contact.hotline)}</a></p>
-      <p><span class="block font-semibold">{ui.hours_label_ar}</span><span class="text-lg">{contact.hours_ar}</span></p>
-    </div>
-    <ul class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 border-t border-maroon/20">
-      {site.branches_ar.map((b) => (
-        <li class="flex items-baseline justify-between gap-4 border-b border-maroon/20 py-4 sm:pe-6">
-          <h2 class="font-display text-maroon text-3xl">{b}</h2>
-          <a href={mapUrl(b)} rel="noopener" class="text-sm font-semibold text-maroon underline underline-offset-4">{ui.map_link_ar}<span class="sr-only"> ({b})</span></a>
-        </li>
-      ))}
-    </ul>
-  </div>
-</Layout>
+<BranchesView lang={Astro.currentLocale} />

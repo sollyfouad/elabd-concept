@@ -1,6 +1,7 @@
 ---
 import site from '../data/site.json';
-import { ar } from '../lib/format.js';
+import { t, num } from '../lib/format.js';
+const { lang } = Astro.props;
 const { ui, brand, contact } = site;
 const social = [
   ['Facebook', contact.social.facebook],
@@ -11,22 +12,22 @@ const social = [
 <footer class="bg-maroon-deep text-cream mt-20">
   <div class="mx-auto max-w-6xl px-4 py-12 grid gap-8 md:grid-cols-3">
     <div>
-      <p class="font-display text-3xl">{brand.name_ar}</p>
-      <p class="mt-1 text-rose">{brand.tagline_ar} · منذ {ar(brand.since)}</p>
+      <p class="font-display text-3xl">{lang === 'ar' ? brand.name_ar : brand.name_en}</p>
+      <p class="mt-1 text-rose">{t(brand, 'tagline', lang)} · {t(ui, 'since', lang)} {num(brand.since, lang)}</p>
     </div>
     <div>
-      <h2 class="font-semibold">{ui.hotline_label_ar}</h2>
-      <a href={`tel:${contact.hotline}`} class="font-display text-4xl hover:text-rose">{ar(contact.hotline)}</a>
-      <h2 class="font-semibold mt-4">{ui.hours_label_ar}</h2>
-      <p class="text-rose">{contact.hours_ar}</p>
+      <h2 class="font-semibold">{t(ui, 'hotline_label', lang)}</h2>
+      <a href={`tel:${contact.hotline}`} class="font-display text-4xl hover:text-rose">{num(contact.hotline, lang)}</a>
+      <h2 class="font-semibold mt-4">{t(ui, 'hours_label', lang)}</h2>
+      <p class="text-rose">{t(contact, 'hours', lang)}</p>
     </div>
     <div>
-      <h2 class="font-semibold">{ui.follow_ar}</h2>
+      <h2 class="font-semibold">{t(ui, 'follow', lang)}</h2>
       <ul class="mt-2 flex flex-wrap gap-x-5 gap-y-2">
         {social.map(([name, href]) => <li><a href={href} class="underline underline-offset-4 hover:text-rose" rel="noopener">{name}</a></li>)}
-        <li><a href={contact.real_site} class="underline underline-offset-4 hover:text-rose" rel="noopener">{ui.real_site_ar}</a></li>
+        <li><a href={contact.real_site} class="underline underline-offset-4 hover:text-rose" rel="noopener">{t(ui, 'real_site', lang)}</a></li>
       </ul>
     </div>
   </div>
-  <p class="border-t border-cream/15 py-4 px-4 text-center text-sm text-rose">{ui.concept_note_ar}</p>
+  <p class="border-t border-cream/15 py-4 px-4 text-center text-sm text-rose">{t(ui, 'concept_note', lang)}</p>
 </footer>
