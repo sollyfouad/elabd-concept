@@ -44,3 +44,7 @@ Tone: warm, proud heritage, Egyptian family occasions. Not luxury-French, not fa
 LOCAL DEV ONLY: hotlinking cdn.elabdfoods.com URLs from site.json is fine.
 If this ever gets deployed: replace with own/stock photos and add a visible
 "Concept redesign, not affiliated with El Abd" banner.
+
+TODO (replace before deploy): one El Abd image is copied into the repo:
+- public/images/elabd-logo.png (El Abd logo, from cdn.elabdfoods.com), used as the site favicon;
+  public/favicon.ico is generated from it.

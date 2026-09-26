@@ -14,7 +14,7 @@ const desc = `${t(pgc, 'description_prefix', lang)} ${label(c, lang)} ${t(pgc, '
 ---
 <Layout title={`${label(c, lang)} ${t(pgc, 'title_suffix', lang)}`} description={desc} lang={lang}>
   <div class="mx-auto max-w-6xl px-4 pt-12">
-    <nav aria-label={t(ui, 'breadcrumb_label', lang)} class="text-sm"><a href={localizeHref('/menu', lang)} class="text-maroon underline underline-offset-4">{t(ui.pages.menu, 'h1', lang)}</a> / <span aria-current="page">{label(c, lang)}</span></nav>
+    <nav aria-label={t(ui, 'breadcrumb_label', lang)} class="text-sm"><a href={localizeHref('/menu', lang)} class="inline-flex items-center min-h-11 text-maroon underline underline-offset-4">{t(ui.pages.menu, 'h1', lang)}</a> / <span aria-current="page">{label(c, lang)}</span></nav>
     <h1 class="mt-3 font-display text-maroon text-6xl">{label(c, lang)}</h1>
     {subs.length > 0 &&
       <ul class="mt-6 flex flex-wrap gap-2">

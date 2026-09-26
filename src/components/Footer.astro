@@ -17,15 +17,15 @@ const social = [
     </div>
     <div>
       <h2 class="font-semibold">{t(ui, 'hotline_label', lang)}</h2>
-      <a href={`tel:${contact.hotline}`} class="font-display text-4xl hover:text-rose">{num(contact.hotline, lang)}</a>
+      <a href={`tel:${contact.hotline}`} class="inline-flex items-center min-h-11 font-display text-4xl hover:text-rose">{num(contact.hotline, lang)}</a>
       <h2 class="font-semibold mt-4">{t(ui, 'hours_label', lang)}</h2>
       <p class="text-rose">{t(contact, 'hours', lang)}</p>
     </div>
     <div>
       <h2 class="font-semibold">{t(ui, 'follow', lang)}</h2>
       <ul class="mt-2 flex flex-wrap gap-x-5 gap-y-2">
-        {social.map(([name, href]) => <li><a href={href} class="underline underline-offset-4 hover:text-rose" rel="noopener">{name}</a></li>)}
-        <li><a href={contact.real_site} class="underline underline-offset-4 hover:text-rose" rel="noopener">{t(ui, 'real_site', lang)}</a></li>
+        {social.map(([name, href]) => <li><a href={href} class="inline-flex items-center min-h-11 underline underline-offset-4 hover:text-rose" rel="noopener">{name}</a></li>)}
+        <li><a href={contact.real_site} class="inline-flex items-center min-h-11 underline underline-offset-4 hover:text-rose" rel="noopener">{t(ui, 'real_site', lang)}</a></li>
       </ul>
     </div>
   </div>

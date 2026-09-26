@@ -26,7 +26,7 @@ where they cross. Huge Ruqaa h1. Nothing else on the site gets that treatment.
 ```
 ┌──────────────────────────────────────────┐
 │                                  ┃▌▌┃   │  (RTL: text starts right,
-│   الحلو الي بجد بطعم العبد        ┃▌▌┃   │   ribbon at inline-end = left)
+│   الحلو اللي بجد بطعم العبد        ┃▌▌┃   │   ribbon at inline-end = left)
 │   الحلو صنعة، من ١٩٧٤ ...          ┃▌▌┃   │
 │   [اطلب على ١٧١١١] [شوف المنيو]     ┃▌▌┃   │
 │━━━━━ الحلو صنعة · منذ ١٩٧٤ · ━━━━━━( ◉ )━━│  ← ribbon + logo knot

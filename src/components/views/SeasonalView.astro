@@ -17,12 +17,13 @@ const { ui, contact } = site;
       <ul class="mt-6 flex flex-wrap gap-2">
         {t(season, 'subcategories', lang).map((s) => <li class="border border-rose/50 text-rose px-3 py-1">{s}</li>)}
       </ul>
-      <a href={`tel:${contact.hotline}`} class="mt-8 inline-block bg-rose text-maroon-deep font-semibold text-lg px-6 py-3 hover:bg-cream transition-colors">{t(ui, 'order', lang)} {num(contact.hotline, lang)}</a>
+      <a href={`tel:${contact.hotline}`} class="mt-8 inline-flex items-center min-h-11 bg-rose text-maroon-deep font-semibold text-lg px-6 py-3 hover:bg-cream transition-colors">{t(ui, 'order', lang)} {num(contact.hotline, lang)}</a>
     </div>
   </div>
   <section class="mx-auto max-w-6xl px-4 py-14" aria-label={t(season, 'title', lang)}>
-    <ul class="grid grid-cols-2 md:grid-cols-4 gap-6">
-      {season.products.map((p) => <li><ProductCard p={p} lang={lang} /></li>)}
+    <!-- Same no-orphan grid as the home Mouled band: first card spans 2 columns below lg. -->
+    <ul class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
+      {season.products.map((p, i) => <li class:list={{ "col-span-2 lg:col-span-1": i === 0 }}><ProductCard p={p} lang={lang} wide={i === 0} /></li>)}
     </ul>
   </section>
 </Layout>

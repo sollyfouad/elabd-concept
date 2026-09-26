@@ -1,26 +1,29 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import site from '../../data/site.json';
-import { t, num } from '../../lib/format.js';
+import Chevron from '../Chevron.astro';
+import { t, num, mapUrl } from '../../lib/format.js';
 const { lang } = Astro.props;
 const pg = site.ui.pages.branches;
-const { ui, contact, brand } = site;
+const { ui, contact } = site;
 // TODO: branch addresses, phone numbers and opening hours per branch are not in site.json.
 const branchesLocalized = t(site, 'branches', lang);
-const mapUrl = (bAr) => `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${brand.name_ar} ${bAr}`)}`;
 ---
-<Layout title={t(pg, 'title', lang)} description={t(pg, 'description', lang)} lang={lang}>
+<Layout title={t(pg, 'title', lang)} description={t(pg, 'description', lang)} lang={lang} jsonLd>
   <div class="mx-auto max-w-6xl px-4 pt-12">
     <h1 class="font-display text-maroon text-6xl">{t(pg, 'h1', lang)}</h1>
     <div class="mt-6 flex flex-wrap gap-x-10 gap-y-4 bg-rose p-6">
-      <p><span class="block font-semibold">{t(ui, 'hotline_label', lang)}</span><a href={`tel:${contact.hotline}`} class="font-display text-maroon text-5xl">{num(contact.hotline, lang)}</a></p>
+      <p><span class="block font-semibold">{t(ui, 'hotline_label', lang)}</span><a href={`tel:${contact.hotline}`} class="inline-flex items-center min-h-11 font-display text-maroon text-5xl">{num(contact.hotline, lang)}</a></p>
       <p><span class="block font-semibold">{t(ui, 'hours_label', lang)}</span><span class="text-lg">{t(contact, 'hours', lang)}</span></p>
     </div>
-    <ul class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 border-t border-maroon/20">
+    <!-- Phones: a vertical list; each branch is one full-width tappable row opening its map search. -->
+    <ul class="mt-10 grid md:grid-cols-2 lg:grid-cols-3 md:gap-x-8 border-t border-maroon/20">
       {site.branches_ar.map((bAr, i) => (
-        <li class="flex items-baseline justify-between gap-4 border-b border-maroon/20 py-4 sm:pe-6">
-          <h2 class="font-display text-maroon text-3xl">{branchesLocalized[i]}</h2>
-          <a href={mapUrl(bAr)} rel="noopener" class="text-sm font-semibold text-maroon underline underline-offset-4">{t(ui, 'map_link', lang)}<span class="sr-only"> ({branchesLocalized[i]})</span></a>
+        <li class="border-b border-maroon/20">
+          <a href={mapUrl(bAr)} rel="noopener" class="flex items-center justify-between gap-4 min-h-11 py-3 hover:bg-rose/50">
+            <h2 class="font-display text-maroon text-3xl">{branchesLocalized[i]}</h2>{' '}
+            <span class="flex items-center gap-1 text-sm font-semibold text-maroon">{t(ui, 'map_link', lang)} <Chevron /></span>
+          </a>
         </li>
       ))}
     </ul>

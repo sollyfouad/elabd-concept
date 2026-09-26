@@ -5,10 +5,12 @@
     "name_en": "El Abd Patisserie",
     "since": 1974,
     "tagline_ar": "الحلو صنعة",
-    "hero_ar": "الحلو الي بجد بطعم العبد",
+    "hero_ar": "الحلو اللي بجد بطعم العبد",
     "logo": "https://cdn.elabdfoods.com/abdproimages-blob/0000526_storeArabicLogo.png",
     "tagline_en": "Sweets are a craft",
-    "hero_en": "Real sweets, the El Abd way"
+    "hero_en": "Real sweets, the El Abd way",
+    "og_image": "https://cdn.elabdfoods.com/abdproimages-blob/0002397_-.webp",
+    "favicon": "/images/elabd-logo.png"
   },
   "contact": {
     "hotline": "17111",
@@ -82,7 +84,30 @@
           "ar": "علبة مولد ٣ (٤٨ قطعة)",
           "en": "Mouled Box 3 (48 pcs)",
           "price": 750,
-          "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002397_-_415.webp"
+          "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002397_-_415.webp",
+          "hero_photo": true,
+          "img_large": "https://cdn.elabdfoods.com/abdproimages-blob/0002397_-.webp"
+        },
+        {
+          "ar": "سمسمية",
+          "en": "Semsemeya (Sesame Bar)",
+          "price": 75,
+          "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000105_415.png",
+          "float": true
+        },
+        {
+          "ar": "حمصية",
+          "en": "Hommoseya (Chickpea Bar)",
+          "price": 65,
+          "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001458_415.webp",
+          "float": true
+        },
+        {
+          "ar": "ملبن فسدق",
+          "en": "Malban with Pistachio",
+          "price": 130,
+          "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000139_-_415.png",
+          "float": true
         }
       ],
       "title_en": "Halawet El Mouled",
@@ -212,7 +237,8 @@
       "en": "Coffee",
       "sub_ar": [],
       "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002417_1-%20674x932-02_450.webp",
-      "sub_en": []
+      "sub_en": [],
+      "steam": true
     },
     {
       "slug": "snacks",
@@ -465,7 +491,9 @@
       "heritage_p_en": "More than fifty years of making sweets with the same craft, from our first branch downtown to every corner of Cairo and Giza.",
       "heritage_cta_en": "Read our story",
       "branches_h_en": "Your nearest branch",
-      "branches_cta_en": "All branches"
+      "branches_cta_en": "All branches",
+      "intro_short_ar": "حلويات القاهرة من سنة ١٩٧٤.",
+      "intro_short_en": "Cairo sweets since 1974."
     },
     "pages": {
       "home": {
@@ -542,7 +570,9 @@
     "list_sep_ar": "، ",
     "list_sep_en": ", ",
     "lang_switch_ar": "English",
-    "lang_switch_en": "العربية"
+    "lang_switch_en": "العربية",
+    "call_ar": "اتصل",
+    "call_en": "Call"
   },
   "catalog": [
     {

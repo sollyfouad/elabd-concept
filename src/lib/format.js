@@ -4,6 +4,9 @@ import site from '../data/site.json';
 export const ar = (n) => Number(n).toLocaleString('ar-EG', { useGrouping: false });
 export const allProducts = [...site.best_sellers, ...site.new_products, ...site.catalog];
 
+// Google Maps search for a branch. Always queried in Arabic (brand + branch), which finds them more reliably in Egypt.
+export const mapUrl = (branchAr) => `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${site.brand.name_ar} ${branchAr}`)}`;
+
 // Arabic-Indic for 'ar', Latin for 'en'; no grouping in both.
 export const num = (n, lang = 'ar') => Number(n).toLocaleString(lang === 'en' ? 'en-US' : 'ar-EG', { useGrouping: false });
 
