@@ -7,7 +7,7 @@ import { dir, alternates } from '../lib/i18n.js';
 import { t } from '../lib/format.js';
 import { structuredData } from '../lib/seo.js';
 
-const { title, description, lang, jsonLd = false } = Astro.props;
+const { title, description, lang, jsonLd = false, productLd = null, image = site.brand.og_image, cart = false, catalog = null } = Astro.props;
 const pageUrl = new URL(Astro.url.pathname, Astro.site).href;
 const siteName = lang === 'en' ? site.brand.name_en : site.brand.name_ar;
 const alt = alternates(Astro.url.pathname);
@@ -26,11 +26,12 @@ const alt = alternates(Astro.url.pathname);
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={pageUrl} />
-    <meta property="og:image" content={site.brand.og_image} />
+    <meta property="og:image" content={image} />
     <meta property="og:locale" content={lang === 'en' ? 'en_US' : 'ar_EG'} />
     <meta property="og:locale:alternate" content={lang === 'en' ? 'ar_EG' : 'en_US'} />
     <meta name="twitter:card" content="summary_large_image" />
     {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(structuredData(lang, Astro.site))} />}
+    {productLd && <script type="application/ld+json" set:html={JSON.stringify(productLd).replace(/</g, '\\u003c')} />}
     <link rel="alternate" hreflang="ar" href={new URL(alt.ar, Astro.site).href} />
     <link rel="alternate" hreflang="en" href={new URL(alt.en, Astro.site).href} />
     <link rel="alternate" hreflang="x-default" href={new URL(alt.ar, Astro.site).href} />
@@ -43,5 +44,9 @@ const alt = alternates(Astro.url.pathname);
     <Header lang={lang} />
     <main id="main" class="flex-1"><slot /></main>
     <Footer lang={lang} />
+    {cart && <p id="cart-status" role="status" class="sr-only"></p>}
+    {cart && <script>import '../scripts/cart-ui.js';</script>}
+    {catalog && <script type="application/json" id="store-catalog" set:html={JSON.stringify(catalog)} />}
+    <script>import '../scripts/cart-count.js';</script>
   </body>
 </html>

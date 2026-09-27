@@ -7,7 +7,9 @@ import { fileURLToPath } from 'node:url';
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DIST = path.join(ROOT, 'dist');
 const site = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/site.json'), 'utf8'));
-const paths = ['', 'menu', 'seasonal', 'story', 'branches', ...site.categories.map((c) => `menu/${c.slug}`)];
+const season = site.seasonal[site.seasonal.active];
+const storeProductsList = [...site.best_sellers, ...site.new_products, ...site.catalog, ...season.products];
+const paths = ['', 'menu', 'seasonal', 'story', 'branches', 'cart', 'checkout', 'search', ...site.categories.map((c) => `menu/${c.slug}`), ...storeProductsList.map((p) => `products/${p.slug}`)];
 const pages = paths.flatMap((p) => [['ar', p], ['en', p]]).map(([lang, p]) => ({
   lang, p, html: fs.readFileSync(path.join(DIST, lang === 'en' ? 'en' : '', p, 'index.html'), 'utf8'),
 }));

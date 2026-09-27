@@ -40,3 +40,26 @@ export function structuredData(lang, siteUrl) {
     ],
   };
 }
+
+// The photo that represents a product when shared: the large variant where one exists.
+export const productImage = (p) => p.img_large || p.img;
+
+// schema.org Product for one product page. Price from site.json in EGP; a price range (value
+// packs) becomes an AggregateOffer. No availability: there is no stock data to state it from.
+export function productData(p, lang, pageUrl) {
+  const offerBase = { priceCurrency: 'EGP', url: pageUrl };
+  const offers = p.price_to != null
+    ? { '@type': 'AggregateOffer', lowPrice: p.price, highPrice: p.price_to, ...offerBase }
+    : { '@type': 'Offer', price: p.price, ...offerBase };
+  const desc = p[`desc_${lang}`];
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: lang === 'en' ? p.en : p.ar,
+    image: [productImage(p), ...(p.gallery || [])],
+    ...(desc ? { description: desc.replace(/\s+/g, ' ').trim() } : {}),
+    brand: { '@type': 'Brand', name: lang === 'en' ? site.brand.name_en : site.brand.name_ar },
+    url: pageUrl,
+    offers,
+  };
+}

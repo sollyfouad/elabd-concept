@@ -78,7 +78,16 @@
           "ar": "علبة مولد ٤ (٣٨ قطعة)",
           "en": "Mouled Box 4 (38 pcs)",
           "price": 570,
-          "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002398_-_415.webp"
+          "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002398_-_415.webp",
+          "slug": "mouled-box-4-38-pcs",
+          "source_url": "https://elabdfoods.com/%D8%B9%D9%84%D8%A8%D8%A9-%D9%85%D9%88%D9%84%D8%AF-4",
+          "desc_ar": "عدد ١ لوزية صوابع ميني\n\nعدد ١ بندقية صوابع ميني\n\nعدد ٣ فولية صوابع ميني\n\nعدد ٣ سمسمية صوابع ميني\n\nعدد ٣ حمصية صوابع ميني\n\nعدد ٤ لديدة ميني\n\nعدد ٤ حمام ميني\n\nعدد ٢ ملبن عين جمل\n\nعدد ٤ ملبن سادة ميني\n\nعدد ٤ ملبن جيلي ميني\n\nعدد ٢ قرص حمص ميني\n\nعدد ١ قرص علف ميني\n\nعدد ٢ بسيمة سادة ميني\n\nعدد ٢ قطعة نوجا فول\n\nعدد ٢ قطعة سوداني مشكلت",
+          "desc_en": "1 Mini Almond Fingers\n\n1 Mini Hazelnut Fingers\n\n3 Mini Peanut Fingers\n\n3 Mini Sesame Fingers\n\n3 Mini Chickpea Fingers\n\n4 Mini Ladida\n\n4 Mini Hamam\n\n2 Walnut Malban Pieces\n\n4 Mini Plain Malban\n\n4 Mini Fruit Jelly Malban\n\n2 Mini Chickpea Disks\n\n1 Mini Sesame & Almond Disk\n\n2 Mini Basima\n\n2 Peanut Nougat Pieces\n\n2 Chocolate Coated Peanuts Pieces",
+          "pieces": 38,
+          "gallery": [
+            "https://cdn.elabdfoods.com/abdproimages-blob/0002386_-_100.webp",
+            "https://cdn.elabdfoods.com/abdproimages-blob/0001422_-_100.webp"
+          ]
         },
         {
           "ar": "علبة مولد ٣ (٤٨ قطعة)",
@@ -86,28 +95,49 @@
           "price": 750,
           "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002397_-_415.webp",
           "hero_photo": true,
-          "img_large": "https://cdn.elabdfoods.com/abdproimages-blob/0002397_-.webp"
+          "img_large": "https://cdn.elabdfoods.com/abdproimages-blob/0002397_-.webp",
+          "slug": "mouled-box-3-48-pcs",
+          "source_url": "https://elabdfoods.com/%D8%B9%D9%84%D8%A8%D8%A9-%D9%85%D9%88%D9%84%D8%AF-3",
+          "desc_ar": "عدد ١ كاجو صوابع ميني\n\nعدد ١ لوزية صوابع ميني\n\nعدد ١ بندقية صوابع ميني\n\nعدد ٤ فولية صوابع ميني\n\nعدد ٤ سمسمية صوابع ميني\n\nعدد ٤ حمصية صوابع ميني\n\nعدد ٤ لديدة ميني\n\nعدد ٤ حمام ميني\n\nعدد ٢ ملبن عين جمل\n\nعدد ٤ ملبن سادة ميني\n\nعدد ٤ ملبن جيلي ميني\n\nعدد ٣ قرص حمص ميني\n\nعدد ٣ قرص علف ميني\n\nعدد ٢ بسيمة بندق ميني\n\nعدد ٢ قطعة نوجا بندق\n\nعدد ٢ قطعة نوجا فول شوكولاتة\n\nعدد ٣ قطعة سوداني مشكلت",
+          "desc_en": "1 Mini Cashew Fingers\n\n1 Mini Almond Fingers\n\n1 Mini Hazelnut Fingers\n\n4 Mini Peanut Fingers\n\n4 Mini Sesame Fingers\n\n4 Mini Chickpea Fingers\n\n4 Mini Ladida\n\n4 Mini Hamam\n\n2 Walnut Malban Pieces\n\n4 Mini Plain Malban\n\n4 Mini Fruit Jelly Malban\n\n3 Mini Chickpea Disks\n\n3 Mini Premium Sesame & Almond Disks\n\n2 Mini Hazelnut Basima\n\n2 Hazelnut Nougat Pieces\n\n2 Chocolate Peanut Nougat Pieces\n\n3 Chocolate Coated Peanuts Pieces",
+          "pieces": 48,
+          "gallery": [
+            "https://cdn.elabdfoods.com/abdproimages-blob/0002387_-_100.webp",
+            "https://cdn.elabdfoods.com/abdproimages-blob/0001423_-_100.webp"
+          ]
         },
         {
           "ar": "سمسمية",
           "en": "Semsemeya (Sesame Bar)",
           "price": 75,
           "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000105_415.png",
-          "float": true
+          "float": true,
+          "slug": "semsemeya-sesame-bar",
+          "source_url": "https://elabdfoods.com/%D8%B3%D9%85%D8%B3%D9%85%D9%8A%D8%A9-%D8%B5%D8%BA%D9%8A%D8%B1",
+          "desc_ar": "سمسم محمص ممزوج بشربات العسل ليمنح مذاقًا غنيًا وقوامًا مقرمشًا.",
+          "desc_en": "Roasted sesame blended with honey syrup for a rich flavor and crispy texture."
         },
         {
           "ar": "حمصية",
           "en": "Hommoseya (Chickpea Bar)",
           "price": 65,
           "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001458_415.webp",
-          "float": true
+          "float": true,
+          "slug": "hommoseya-chickpea-bar",
+          "source_url": "https://elabdfoods.com/%D8%AD%D9%85%D8%B5%D9%8A%D8%A9-%D8%B5%D8%BA%D9%8A%D8%B1",
+          "desc_ar": "حمص محمص ممزوج بشربات العسل ليمنح مذاقًا غنيًا وقوامًا مقرمشًا.",
+          "desc_en": "Roasted chickpeas blended with honey syrup for a rich flavor and crispy texture."
         },
         {
           "ar": "ملبن فسدق",
           "en": "Malban with Pistachio",
           "price": 130,
           "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000139_-_415.png",
-          "float": true
+          "float": true,
+          "slug": "malban-with-pistachio",
+          "source_url": "https://elabdfoods.com/%D9%85%D9%84%D8%A8%D9%86-%D9%81%D8%B3%D8%AF%D9%82-%D8%B5%D8%BA%D9%8A%D8%B1",
+          "desc_ar": "ملبن طري محشو بالفستق، بقوام ناعم ومذاق غني.",
+          "desc_en": "Soft Malban filled with pistachios, offering a smooth texture and rich flavor."
         }
       ],
       "title_en": "Halawet El Mouled",
@@ -287,49 +317,77 @@
       "price": 55,
       "category": "bakery",
       "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000670_-_415.png",
-      "en": "Mega Chocolate Croissant"
+      "en": "Mega Chocolate Croissant",
+      "slug": "mega-chocolate-croissant",
+      "source_url": "https://elabdfoods.com/%D9%83%D8%B1%D9%88%D8%A7%D8%B3%D9%88%D9%86-%D8%B4%D9%88%D9%83%D9%88%D9%84%D8%A7%D8%AA%D9%87",
+      "desc_ar": "كرواسون فريش من العبد مخبوز من : الزبد، والدقيق الفاخر، محشو بشوكولاتة العبد المميزة",
+      "desc_en": "Fresh croissant filled with Al Abd signature chocolate to boost your energy at the beginning of the day."
     },
     {
       "ar": "جاتوه سويس رول شوكولاته",
       "price": 50,
       "category": "western",
       "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002136_-_415.png",
-      "en": "Chocolate Swiss Roll Gateau"
+      "en": "Chocolate Swiss Roll Gateau",
+      "slug": "chocolate-swiss-roll-gateau",
+      "source_url": "https://elabdfoods.com/%D8%AC%D8%A7%D8%AA%D9%88%D9%87-%D8%B3%D9%88%D9%8A%D8%B3-%D8%B1%D9%88%D9%84-%D8%B4%D9%88%D9%83%D9%88%D9%84%D8%A7%D8%AA%D9%87",
+      "desc_ar": "جاتوه السويسرول الشوكولاتة من العبد مصنوع من كيكة الشوكولاتة اللذيذة وحشو كريمة الشوكولاتة الرائع",
+      "desc_en": "El Abd Chocolate Swiss Roll Gateau is made from mouthwatering chocolate sponge cake, coated with creamy chocolate filling, and rolled into perfection."
     },
     {
       "ar": "جاتوه موس شوكولاته",
       "price": 53,
       "category": "western",
       "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000681_-_415.png",
-      "en": "Chocolate Mousse Gateau"
+      "en": "Chocolate Mousse Gateau",
+      "slug": "chocolate-mousse-gateau",
+      "source_url": "https://elabdfoods.com/%D8%AC%D8%A7%D8%AA%D9%88%D9%87-%D9%85%D9%88%D8%B3-%D8%B4%D9%88%D9%83%D9%88%D9%84%D8%A7%D8%AA%D9%87",
+      "desc_ar": "كيكة شوكولاتة اسفنجية محشوة بالكريمة الطازجة ومغطاة بطبقة من موس الشوكولاتة",
+      "desc_en": "A chocolate sponge cake stuffed with fluffy whipped cream and covered with chocolate mousse."
     },
     {
       "ar": "جاتوه ميلفيه شوكولاته",
       "price": 53,
       "category": "western",
       "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000677_-_415.png",
-      "en": "Chocolate Mille-feuille Gateau"
+      "en": "Chocolate Mille-feuille Gateau",
+      "slug": "chocolate-mille-feuille-gateau",
+      "source_url": "https://elabdfoods.com/%D8%AC%D8%A7%D8%AA%D9%88%D9%87-%D9%85%D9%8A%D9%84%D9%81%D9%8A%D9%87-%D8%B4%D9%88%D9%83%D9%88%D9%84%D8%A7%D8%AA%D9%87",
+      "desc_ar": "ميلفيه العبد هي حلوى مكونة من ثلاث طبقات معروفة بطعمها المقرمش والغني بالزبدة والتناغم بين كل مكوناتها مع طبقات لا تقاوم من المعجنات\n\n.والشوكولاتة",
+      "desc_en": "El Abd Mille-feuille Chocolaté Gâteau is flakey, buttery, crispy, and decadent in all the right places. With 3 layers of puff pastry and incredibly tasty chocolate filling."
     },
     {
       "ar": "جاتوه ميلفيه مربى",
       "price": 53,
       "category": "western",
       "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000682_-_415.png",
-      "en": "Jam Mille-feuille Gateau"
+      "en": "Jam Mille-feuille Gateau",
+      "slug": "jam-mille-feuille-gateau",
+      "source_url": "https://elabdfoods.com/%D8%AC%D8%A7%D8%AA%D9%88%D9%87-%D9%85%D9%8A%D9%84%D9%81%D9%8A%D9%87-%D9%85%D8%B1%D8%A8%D9%89",
+      "desc_ar": "جاتوه ميلفيه المربى من العبد مصنوع من طبقتين بينهم مربى مشمش وكريمة",
+      "desc_en": "El Abd Mille-feuille Jam Gateau is made from two layers of puff pastry, coated with delicious apricot jam and stuffed with fresh cream in between."
     },
     {
       "ar": "باتيه جبنة رومي ميجا",
       "price": 55,
       "category": "bakery",
       "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000673_-_415.png",
-      "en": "Mega Roumi Cheese Pateh"
+      "en": "Mega Roumi Cheese Pateh",
+      "slug": "mega-roumi-cheese-pateh",
+      "source_url": "https://elabdfoods.com/%D8%A8%D8%A7%D8%AA%D9%8A%D9%87-%D8%AC%D8%A8%D9%86%D8%A9-%D8%B1%D9%88%D9%85%D9%8A",
+      "desc_ar": "باتيه العبد بطعمه الرائع المخبوز بالزبدة و المحشو بالجبنة الرومي اللذيذة",
+      "desc_en": "An easy and delicious breakfast from Al Abd. Buttery baked croissant filled with the tasteful rumi cheese."
     },
     {
       "ar": "جاتوه خوخ",
       "price": 50,
       "category": "western",
       "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000399_-_415.png",
-      "en": "Peach Gateau"
+      "en": "Peach Gateau",
+      "slug": "peach-gateau",
+      "source_url": "https://elabdfoods.com/%D8%AC%D8%A7%D8%AA%D9%88%D9%87-%D8%AE%D9%88%D8%AE",
+      "desc_ar": "مفيش أحلى ولا ألذ من الخوخ! جاتوه الخوخ من العبد خفيف وبسيط وطعمه رائع. نكهة فاكهة لذيذة مع كيك غني بالكريمة",
+      "desc_en": "A peachy treat that makes your meal complete! El Abd Peach Gateau is simple and palatable, complemented with creamy sponge cake that brings out the fresh fruity flavor."
     }
   ],
   "new_products": [
@@ -338,98 +396,156 @@
       "price": 45,
       "category": "bakery",
       "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002320_-_415.webp",
-      "en": "Kinder Croissant"
+      "en": "Kinder Croissant",
+      "slug": "kinder-croissant",
+      "source_url": "https://elabdfoods.com/%D9%83%D8%B1%D9%88%D8%A7%D8%B3%D9%88%D9%86-%D9%83%D9%8A%D9%86%D8%AF%D8%B1",
+      "desc_ar": "كرواسون محشو بكريمة الكيندر الناعمة بطعم شوكولاتة غني.",
+      "desc_en": "Soft croissant filled with smooth Kinder cream for a rich chocolate flavor.",
+      "gallery": [
+        "https://cdn.elabdfoods.com/abdproimages-blob/0002321_-_100.webp"
+      ]
     },
     {
       "ar": "دونتس فيلد راسبيري تشيز كيك",
       "price": 35,
       "category": "bakery",
       "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002326_-_415.webp",
-      "en": "Raspberry Cheesecake Filled Donut"
+      "en": "Raspberry Cheesecake Filled Donut",
+      "slug": "raspberry-cheesecake-filled-donut",
+      "source_url": "https://elabdfoods.com/%D8%AF%D9%88%D9%86%D8%AA%D8%B3-%D9%81%D9%8A%D9%84%D8%AF-%D8%B1%D8%A7%D8%B3%D8%A8%D9%8A%D8%B1%D9%8A-%D8%AA%D8%B4%D9%8A%D8%B2-%D9%83%D9%8A%D9%83",
+      "desc_ar": "دونتس محشو تشيز كيك مع راسبيري بطعم منعش ولذيذ.",
+      "desc_en": "Soft donut filled with raspberry cheesecake for a sweet and tangy taste."
     },
     {
       "ar": "دونتس فيلد كيندر",
       "price": 40,
       "category": "bakery",
       "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002327_-_415.webp",
-      "en": "Kinder Filled Donut"
+      "en": "Kinder Filled Donut",
+      "slug": "kinder-filled-donut",
+      "source_url": "https://elabdfoods.com/%D8%AF%D9%88%D9%86%D8%AA%D8%B3-%D9%81%D9%8A%D9%84%D8%AF-%D9%83%D9%8A%D9%86%D8%AF%D8%B1",
+      "desc_ar": "دونتس محشو بكريمة الكيندر الغنية بطعم شوكولاتة مميز.",
+      "desc_en": "Soft donut filled with rich Kinder cream for a smooth chocolate taste."
     },
     {
       "ar": "براونيز بقطع الشوكولاتة",
       "price": 55,
       "category": "bakery",
       "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002318_-_415.webp",
-      "en": "Chocolate Chunk Brownies"
+      "en": "Chocolate Chunk Brownies",
+      "slug": "chocolate-chunk-brownies",
+      "source_url": "https://elabdfoods.com/%D8%A8%D8%B1%D8%A7%D9%88%D9%86%D9%8A%D8%B2-%D8%A8%D9%82%D8%B7%D8%B9-%D8%A7%D9%84%D8%B4%D9%88%D9%83%D9%88%D9%84%D8%A7%D8%AA%D8%A9",
+      "desc_ar": "براونيز غني بقطع شوكولاتة، طري من الداخل ومليان بطعم الشوكولاتة الغني.",
+      "desc_en": "Rich brownies loaded with chocolate chips, soft inside with an intense chocolate flavor."
     },
     {
       "ar": "دانش شوكولاتة بندق دايموند",
       "price": 45,
       "category": "bakery",
       "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002316_-_415.webp",
-      "en": "Chocolate Hazelnut Diamond Danish"
+      "en": "Chocolate Hazelnut Diamond Danish",
+      "slug": "chocolate-hazelnut-diamond-danish",
+      "source_url": "https://elabdfoods.com/%D8%AF%D8%A7%D9%86%D8%B4-%D8%B4%D9%88%D9%83%D9%88%D9%84%D8%A7%D8%AA%D8%A9-%D8%A8%D9%86%D8%AF%D9%82-%D8%AF%D8%A7%D9%8A%D9%85%D9%88%D9%86%D8%AF",
+      "desc_ar": "دانش محشو بشوكولاتة بالبندق بطبقة ناعمة وغنية، بطعم مميز وطازج ومناسب لأي وقت.",
+      "desc_en": "Danish pastry filled with chocolate and hazelnut, with a smooth rich layer and a distinctive flavor, fresh and perfect any time."
     },
     {
       "ar": "ابل باي",
       "price": 65,
       "category": "bakery",
       "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002317_-_415.webp",
-      "en": "Apple Pie"
+      "en": "Apple Pie",
+      "slug": "apple-pie",
+      "source_url": "https://elabdfoods.com/%D8%A7%D8%A8%D9%84-%D8%A8%D8%A7%D9%8A",
+      "desc_ar": "ابل باي بطعم غني وحشوة تفاح مطبوخ بتوابل خفيفة داخل عجينة ذهبية هشة.",
+      "desc_en": "Apple pie with rich cooked apple filling and light spices in a golden flaky crust."
     },
     {
       "ar": "ساندوتش تونة",
       "price": 115,
       "category": "bakery",
       "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002333_-_415.webp",
-      "en": "Tuna Sandwich"
+      "en": "Tuna Sandwich",
+      "slug": "tuna-sandwich",
+      "source_url": "https://elabdfoods.com/%D8%B3%D8%A7%D9%86%D8%AF%D9%88%D8%AA%D8%B4-%D8%AA%D9%88%D9%86%D8%A9-2",
+      "desc_ar": "عيش فيينا براون - تونة ميكس - مايونيز",
+      "desc_en": "Brown Vienna bread - Tuna mix - Mayonnaise"
     },
     {
       "ar": "ساندوتش سالمون مدخن",
       "price": 140,
       "category": "bakery",
       "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002335_-_415.webp",
-      "en": "Smoked Salmon Sandwich"
+      "en": "Smoked Salmon Sandwich",
+      "slug": "smoked-salmon-sandwich"
     },
     {
       "ar": "العبد كوكيز شوكولاتة ٣٠ قطعة",
       "price": 175,
       "category": "snacks",
       "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001341_-30-_415.png",
-      "en": "El Abd Chocolate Cookies (30 pcs)"
+      "en": "El Abd Chocolate Cookies (30 pcs)",
+      "slug": "el-abd-chocolate-cookies-30-pcs",
+      "source_url": "https://elabdfoods.com/%D8%A8%D8%B3%D9%83%D9%88%D9%8A%D8%AA-%D8%A8%D9%82%D8%B7%D8%B9-%D8%A7%D9%84%D8%B4%D9%88%D9%83%D9%88%D9%84%D8%A7%D8%AA%D8%A9-30-%D9%82%D8%B7%D8%B9%D8%A9-%D9%83%D9%88%D9%83%D9%8A%D8%B2",
+      "desc_ar": "بسكويت العبد بقطع الشوكولاتة عبارة عن عجينة قوامها هش مغطاة برقائق من الشكولاته تتكون العجينه من: الدقيق الفاخر والزبدة والسكر والبيض والفانيليا",
+      "desc_en": "El Abd chocolate chip biscuits: a crumbly dough covered with chocolate flakes. The dough is made of premium flour, butter, sugar, eggs and vanilla.",
+      "translated": "en",
+      "pieces": 30,
+      "gallery": [
+        "https://cdn.elabdfoods.com/abdproimages-blob/0000870_-30-_100.png"
+      ]
     },
     {
       "ar": "كوكيز العبد فانيليا ٣٠ قطعة",
       "price": 170,
       "category": "snacks",
       "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001353_-30_415.png",
-      "en": "El Abd Vanilla Cookies (30 pcs)"
+      "en": "El Abd Vanilla Cookies (30 pcs)",
+      "slug": "el-abd-vanilla-cookies-30-pcs",
+      "source_url": "https://elabdfoods.com/%D8%A7%D9%84%D8%B9%D8%A8%D8%AF-%D9%83%D9%88%D9%83%D9%8A%D8%B2-%D9%81%D8%A7%D9%86%D9%8A%D9%84%D9%8A%D8%A7-30-%D9%82%D8%B7%D8%B9%D8%A9",
+      "pieces": 30,
+      "gallery": [
+        "https://cdn.elabdfoods.com/abdproimages-blob/0000891_-30_100.png"
+      ]
     },
     {
       "ar": "علبة كوكيز مشكلتة تويست ٣٠ قطعة",
       "price": 220,
       "category": "snacks",
       "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001835_-30-_415.webp",
-      "en": "Twist Assorted Cookies Box (30 pcs)"
+      "en": "Twist Assorted Cookies Box (30 pcs)",
+      "slug": "twist-assorted-cookies-box-30-pcs",
+      "source_url": "https://elabdfoods.com/%D8%B9%D9%84%D8%A8%D8%A9-%D9%83%D9%88%D9%83%D9%8A%D8%B2-%D9%85%D8%B4%D9%83%D9%84%D8%AA%D8%A9-%D8%AA%D9%88%D9%8A%D8%B3%D8%AA-30-%D9%82%D8%B7%D8%B9%D8%A9",
+      "pieces": 30
     },
     {
       "ar": "كاساتا ايس كريم فواكه صغير",
       "price": 230,
       "category": "ice-cream-cakes",
       "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001090_-_415.png",
-      "en": "Fruit Cassata Ice Cream, Small"
+      "en": "Fruit Cassata Ice Cream, Small",
+      "slug": "fruit-cassata-ice-cream-small",
+      "source_url": "https://elabdfoods.com/%D8%A7%D9%8A%D8%B3-%D9%83%D8%B1%D9%8A%D9%85-%D9%81%D9%88%D8%A7%D9%83%D9%87-%D9%83%D8%A7%D8%B3%D8%A7%D8%AA%D8%A7-%D8%B5%D8%BA%D9%8A%D8%B1-2"
     },
     {
       "ar": "ايس كريم كاساتا شوكولاتة صغير",
       "price": 260,
       "category": "ice-cream-cakes",
       "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001007_-_415.png",
-      "en": "Chocolate Cassata Ice Cream, Small"
+      "en": "Chocolate Cassata Ice Cream, Small",
+      "slug": "chocolate-cassata-ice-cream-small",
+      "source_url": "https://elabdfoods.com/%D9%83%D8%A7%D8%B3%D8%A7%D8%AA%D8%A7-%D8%A7%D9%8A%D8%B3-%D9%83%D8%B1%D9%8A%D9%85-%D8%B4%D9%88%D9%83%D9%88%D9%84%D8%A7%D8%AA%D8%A9-%D8%B5%D8%BA%D9%8A%D8%B1"
     },
     {
       "ar": "تورتة ايس كريم هوني كومب",
       "price": 360,
       "category": "ice-cream-cakes",
       "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001433_-_415.webp",
-      "en": "Honeycomb Ice Cream Cake"
+      "en": "Honeycomb Ice Cream Cake",
+      "slug": "honeycomb-ice-cream-cake",
+      "source_url": "https://elabdfoods.com/%D8%AA%D9%88%D8%B1%D8%AA%D8%A9-%D8%A7%D9%8A%D8%B3-%D9%83%D8%B1%D9%8A%D9%85-%D9%87%D9%88%D9%86%D9%8A-%D9%83%D9%88%D9%85%D8%A8",
+      "desc_ar": "تذوق تورتة الآيس كريم هوني كومب، مزيج رائع من الآيس كريم الكريمي وطبقات العسل المقرمشة. مثالية للاحتفالات، تقدم تجربة حلوة ولذيذة لا تُقاوم.",
+      "desc_en": "Savor the Honeycomb Ice-Cream Cake, a luscious blend of creamy ice cream and crunchy honeycomb layers. Perfect for celebrations, this cake offers a delightful, sweet experience."
     }
   ],
   "currency_ar": "ج.م.",
@@ -545,6 +661,36 @@
         "title_en": "Branches | El Abd Patisserie",
         "h1_en": "Our Branches",
         "description_en": "11 El Abd Patisserie branches in Cairo and Giza, open daily from 9 AM to midnight. Hotline 17111."
+      },
+      "product": {
+        "title_suffix_ar": "| حلواني العبد",
+        "title_suffix_en": "| El Abd Patisserie",
+        "description_fallback_ar": "{name} من حلواني العبد بسعر {price}.",
+        "description_fallback_en": "{name} from El Abd Patisserie, {price}."
+      },
+      "cart": {
+        "title_ar": "السلة | حلواني العبد",
+        "title_en": "Cart | El Abd Patisserie",
+        "h1_ar": "السلة",
+        "h1_en": "Your cart",
+        "description_ar": "راجع الأصناف اللي في سلتك في النسخة التجريبية من متجر حلواني العبد.",
+        "description_en": "Review the items in your cart on the El Abd Patisserie store concept."
+      },
+      "checkout": {
+        "title_ar": "إتمام الطلب | حلواني العبد",
+        "title_en": "Checkout | El Abd Patisserie",
+        "h1_ar": "إتمام الطلب",
+        "h1_en": "Checkout",
+        "description_ar": "خطوات طلب تجريبية: مفيش بيانات بتتحفظ أو بتتبعت.",
+        "description_en": "A mock checkout: nothing is stored or sent."
+      },
+      "search": {
+        "title_ar": "البحث | حلواني العبد",
+        "title_en": "Search | El Abd Patisserie",
+        "h1_ar": "دوّر على صنف",
+        "h1_en": "Find a product",
+        "description_ar": "ابحث في كل أصناف حلواني العبد بالاسم، بالعربي أو بالإنجليزي.",
+        "description_en": "Search every El Abd Patisserie product by name, in Arabic or English."
       }
     },
     "menu_toggle_en": "Browse",
@@ -572,7 +718,173 @@
     "lang_switch_ar": "English",
     "lang_switch_en": "العربية",
     "call_ar": "اتصل",
-    "call_en": "Call"
+    "call_en": "Call",
+    "store": {
+      "add_to_cart_ar": "أضف للسلة",
+      "add_to_cart_en": "Add to cart",
+      "added_ar": "اتضاف للسلة: {name}",
+      "added_en": "Added to cart: {name}",
+      "added_short_ar": "اتضاف",
+      "added_short_en": "Added",
+      "cart_label_ar": "السلة",
+      "cart_label_en": "Cart",
+      "cart_count_ar": "السلة: {n}",
+      "cart_count_en": "Cart: {n}",
+      "qty_label_ar": "الكمية",
+      "qty_label_en": "Quantity",
+      "qty_dec_ar": "قلّل الكمية",
+      "qty_dec_en": "Decrease quantity",
+      "qty_inc_ar": "زوّد الكمية",
+      "qty_inc_en": "Increase quantity",
+      "line_qty_ar": "الكمية: {name}",
+      "line_qty_en": "Quantity: {name}",
+      "line_dec_ar": "قلّل كمية {name}",
+      "line_dec_en": "Decrease quantity of {name}",
+      "line_inc_ar": "زوّد كمية {name}",
+      "line_inc_en": "Increase quantity of {name}",
+      "remove_ar": "شيل {name} من السلة",
+      "remove_en": "Remove {name} from cart",
+      "removed_ar": "اتشال من السلة: {name}",
+      "removed_en": "Removed from cart: {name}",
+      "total_ar": "الإجمالي",
+      "total_en": "Total",
+      "from_ar": "يبدأ من",
+      "from_en": "from",
+      "empty_ar": "السلة فاضية.",
+      "empty_en": "Your cart is empty.",
+      "continue_ar": "كمّل تسوّق",
+      "continue_en": "Continue shopping",
+      "checkout_ar": "إتمام الطلب",
+      "checkout_en": "Checkout",
+      "box_h_ar": "مكونات العلبة",
+      "box_h_en": "What's in the box",
+      "details_h_ar": "التفاصيل",
+      "details_h_en": "Details",
+      "weight_ar": "الوزن",
+      "weight_en": "Weight",
+      "grams_ar": "جم",
+      "grams_en": "g",
+      "pieces_ar": "العدد",
+      "pieces_en": "Pieces",
+      "pieces_unit_ar": "قطعة",
+      "pieces_unit_en": "pcs",
+      "photo_n_ar": "عرض الصورة {i} من {n}",
+      "photo_n_en": "Show photo {i} of {n}",
+      "search_toggle_ar": "بحث",
+      "search_toggle_en": "Search",
+      "search_label_ar": "ابحث باسم الصنف",
+      "search_label_en": "Search by product name",
+      "search_submit_ar": "ابحث",
+      "search_submit_en": "Search",
+      "results_ar": "النتايج: {n}",
+      "results_en": "Results: {n}",
+      "no_results_ar": "مفيش أصناف بالاسم ده.",
+      "no_results_en": "No products match that name.",
+      "step_area_ar": "التوصيل أو الاستلام",
+      "step_area_en": "Delivery or pickup",
+      "method_legend_ar": "توصيل ولا استلام من الفرع؟",
+      "method_legend_en": "Delivery or pickup?",
+      "method_delivery_ar": "توصيل",
+      "method_delivery_en": "Delivery",
+      "method_pickup_ar": "استلام من الفرع",
+      "method_pickup_en": "Pickup from a branch",
+      "address_note_ar": "العنوان ده مش بيتحفظ ولا بيتبعت لأي مكان. دي نسخة تجريبية.",
+      "address_note_en": "This address is not saved or sent anywhere. This is a concept.",
+      "addr_area_ar": "المنطقة",
+      "addr_area_en": "Area",
+      "addr_street_ar": "الشارع",
+      "addr_street_en": "Street",
+      "addr_building_ar": "العمارة / الدور / الشقة",
+      "addr_building_en": "Building / floor / apartment",
+      "addr_landmark_ar": "علامة مميزة (اختياري)",
+      "addr_landmark_en": "Landmark (optional)",
+      "area_legend_ar": "اختار الفرع",
+      "area_legend_en": "Choose a branch",
+      "step_time_pickup_ar": "ميعاد الاستلام",
+      "step_time_pickup_en": "Pickup time",
+      "contact_legend_ar": "بياناتك",
+      "contact_legend_en": "Your details",
+      "cust_name_ar": "الاسم",
+      "cust_name_en": "Name",
+      "cust_phone_ar": "رقم الموبايل",
+      "cust_phone_en": "Mobile number",
+      "contact_note_ar": "الاسم والرقم مش بيتحفظوا ولا بيتبعتوا لأي مكان، وبيتمسحوا أول ما تأكد الطلب. دي نسخة تجريبية.",
+      "contact_note_en": "Your name and number are not saved or sent anywhere, and are cleared as soon as you confirm. This is a concept.",
+      "error_name_ar": "اكتب اسمك.",
+      "error_name_en": "Enter your name.",
+      "error_phone_ar": "اكتب رقم موبايل صحيح.",
+      "error_phone_en": "Enter a valid mobile number.",
+      "step_pay_time_ar": "الميعاد والدفع",
+      "step_pay_time_en": "Time & payment",
+      "payment_legend_ar": "طريقة الدفع",
+      "payment_legend_en": "Payment",
+      "error_payment_ar": "اختار طريقة الدفع.",
+      "error_payment_en": "Choose a payment method.",
+      "delivery_fee_ar": "رسوم التوصيل بتتحدد عند التأكيد",
+      "delivery_fee_en": "Delivery fee is set when the order is confirmed",
+      "payments_ar": ["كاش عند الاستلام", "كارت عند الاستلام", "إنستاباي"],
+      "payments_en": ["Cash on delivery", "Card on delivery", "InstaPay"],
+      "sum_name_ar": "الاسم",
+      "sum_name_en": "Name",
+      "sum_phone_ar": "الموبايل",
+      "sum_phone_en": "Mobile",
+      "sum_method_ar": "طريقة الاستلام",
+      "sum_method_en": "Method",
+      "sum_address_ar": "العنوان",
+      "sum_address_en": "Address",
+      "sum_branch_ar": "الفرع",
+      "sum_branch_en": "Branch",
+      "sum_time_ar": "الميعاد",
+      "sum_time_en": "Time",
+      "sum_payment_ar": "الدفع",
+      "sum_payment_en": "Payment",
+      "edit_details_ar": "عدّل بياناتك",
+      "edit_details_en": "Edit your details",
+      "confirm_ar": "تأكيد الطلب",
+      "order_no_ar": "رقم الطلب التجريبي",
+      "order_no_en": "Demo order number",
+      "item_count_ar": "عدد القطع",
+      "item_count_en": "Items",
+      "confirm_en": "Confirm order",
+      "confirmed_h_ar": "اتأكد الطلب (تجريبي)",
+      "confirmed_h_en": "Order confirmed (demo)",
+      "confirmed_body_ar": "ده تأكيد تجريبي: مفيش طلب اتبعت لأي مكان، ومسحنا بياناتك والسلة. عشان تطلب بجد، اطلب من الموقع الرسمي أو كلمنا على ١٧١١١.",
+      "confirmed_body_en": "This is a demo confirmation: no order was sent anywhere, and your details and cart have been cleared. To order for real, use the official website or call 17111.",
+      "error_method_ar": "اختار توصيل أو استلام.",
+      "error_method_en": "Choose delivery or pickup.",
+      "error_address_ar": "اكتب المنطقة والشارع.",
+      "error_address_en": "Enter the area and street.",
+      "step_time_ar": "ميعاد التوصيل",
+      "step_time_en": "Delivery time",
+      "step_summary_ar": "ملخص الطلب",
+      "step_summary_en": "Order summary",
+      "steps_label_ar": "خطوات الطلب",
+      "steps_label_en": "Checkout steps",
+      "next_ar": "التالي",
+      "next_en": "Next",
+      "back_ar": "رجوع",
+      "back_en": "Back",
+      "error_area_ar": "اختار الفرع.",
+      "error_area_en": "Choose a branch.",
+      "error_time_ar": "اختار ميعاد التوصيل.",
+      "error_time_en": "Choose a delivery time.",
+      "concept_order_ar": "ده موقع تجريبي: الطلب ده ما اتبعتش لأي مكان، ومفيش أي بيانات اتحفظت. عشان تطلب بجد، اطلب من الموقع الرسمي أو كلمنا على ١٧١١١.",
+      "concept_order_en": "This is a concept site: this order was not sent anywhere and nothing was saved. To order for real, use the official website or call 17111.",
+      "slots_ar": [
+        "٩ الصبح – ١٢ الضهر",
+        "١٢ الضهر – ٣ العصر",
+        "٣ العصر – ٦ المغرب",
+        "٦ المغرب – ٩ بالليل",
+        "٩ بالليل – ١٢ نص الليل"
+      ],
+      "slots_en": [
+        "9 AM – 12 PM",
+        "12 – 3 PM",
+        "3 – 6 PM",
+        "6 – 9 PM",
+        "9 PM – 12 AM"
+      ]
+    }
   },
   "catalog": [
     {
@@ -580,112 +892,198 @@
       "price": 115,
       "category": "oriental",
       "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000750_-_415.png",
-      "en": "Sawabe Zeinab"
+      "en": "Sawabe Zeinab",
+      "slug": "sawabe-zeinab",
+      "source_url": "https://elabdfoods.com/%D8%B5%D9%88%D8%A7%D8%A8%D8%B9-%D8%B2%D9%8A%D9%86%D8%A8",
+      "desc_ar": "صوابع زينب حلوى شرقية مفضلة لدى الكثير، وسحر مكوناتها من: السميد، ودقيق القمح الفاخر، يعطى لها مذاق، وطعم خاص",
+      "desc_en": "El Abd Sawabe’ Zainab is a mix of semolina, flour, sugar, and sweet ingredients that blend together to form an incredible creation."
     },
     {
       "ar": "مشكل شرقي مكسرات",
       "price": 650,
       "category": "oriental",
       "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001525_-_415.webp",
-      "en": "Assorted Oriental Sweets with Nuts"
+      "en": "Assorted Oriental Sweets with Nuts",
+      "slug": "assorted-oriental-sweets-with-nuts",
+      "source_url": "https://elabdfoods.com/%D9%85%D8%B4%D9%83%D9%84-%D8%B4%D8%B1%D9%82%D9%8A-%D9%85%D9%83%D8%B3%D8%B1%D8%A7%D8%AA",
+      "desc_ar": "طبق مشكل من الحلويات الشرقية بمذاق خاص وطعم شرقي أصيل لا يقارن",
+      "desc_en": "An assortment of Middle Eastern sweets, El Abd Oriental Sweets Plate is the perfect gift for gatherings and occasions."
     },
     {
       "ar": "رموش الست",
       "price": 155,
       "category": "oriental",
       "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000746_415.png",
-      "en": "Rumoush El Set"
+      "en": "Rumoush El Set",
+      "slug": "rumoush-el-set",
+      "source_url": "https://elabdfoods.com/%D8%B1%D9%85%D9%88%D8%B4",
+      "desc_ar": "رموش الست من أشهى الحلويات الشرقية على الإطلاق تتسم بمذاقها الفريد وملمسها الناعم وقومها اللين الشهير متوفرة بوصفة العبد المميزة من : الدقيق الفاخر وسكر البودرة وجوز الهند والزبدة",
+      "desc_en": "Remoush Al-Sit El Abd is an oriental Arabic dessert. It is a sweet dough that is fried in oil, then honey is added to it."
     },
     {
       "ar": "كنافة مكسرات",
       "price": 255,
       "category": "oriental",
       "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000749_-_415.png",
-      "en": "Kunafa with Nuts"
+      "en": "Kunafa with Nuts",
+      "slug": "kunafa-with-nuts",
+      "source_url": "https://elabdfoods.com/%D9%83%D9%86%D8%A7%D9%81%D8%A9-%D9%85%D9%83%D8%B3%D8%B1%D8%A7%D8%AA",
+      "desc_ar": "الكنافة بالمكسرات من العبد تجمع مزيج رائع بين طعم الكنافة، والمكسرات بمكونات من: الكنافة، العسل، جوز الهند، البندق، الزبيب",
+      "desc_en": "This Kunafa merges between the authentic flavor of Al Abd and the delicious nuts that will give you the best taste ever."
     },
     {
       "ar": "كنافة كريمة",
       "price": 200,
       "category": "oriental",
       "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000748_-_415.png",
-      "en": "Kunafa with Cream"
+      "en": "Kunafa with Cream",
+      "slug": "kunafa-with-cream",
+      "source_url": "https://elabdfoods.com/%D9%83%D9%86%D8%A7%D9%81%D8%A9-%D9%83%D8%B1%D9%8A%D9%85%D8%A9",
+      "desc_ar": "مزيج من كنافة العبد الرائعة، الممزوجة مع الكريمة الفريش، وانسياب العسل فوقها ليعطي لها مذاق العبد الفريد",
+      "desc_en": "Al Abd Kunafa with cream is made from the top ingredients and the freshest cream to satisfy your sweet tooth."
     },
     {
       "ar": "بسبوسة بندق",
       "price": 165,
       "category": "oriental",
       "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000760_-_415.png",
-      "en": "Hazelnut Basbousa"
+      "en": "Hazelnut Basbousa",
+      "slug": "hazelnut-basbousa",
+      "source_url": "https://elabdfoods.com/%D8%A8%D8%B3%D8%A8%D9%88%D8%B3%D8%A9-%D8%A8%D9%86%D8%AF%D9%82",
+      "desc_ar": "بسبوسة البندق من العبد هي الحلوى الشرقية المفضلة للجميع، مغطاة بالبندق الغنى بالطعم الرائع، والذي يضيف التناغم القوي بينه وبين البسبوسة",
+      "desc_en": "El Abd Hazelnut Basbousa is your favorite oriental sweet delight, complemented with crunchy roasted hazelnuts. You’ll fall in love from the first bite."
     },
     {
       "ar": "بسبوسة سادة",
       "price": 140,
       "category": "oriental",
       "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000745_-_415.png",
-      "en": "Plain Basbousa"
+      "en": "Plain Basbousa",
+      "slug": "plain-basbousa",
+      "source_url": "https://elabdfoods.com/%D8%A8%D8%B3%D8%A8%D9%88%D8%B3%D8%A9-%D8%B3%D8%A7%D8%AF%D8%A9",
+      "desc_ar": "بسبوسة سادة من العبد، واحدة من أفضل الحلويات الشرقية مبيعًا، لمحبي الطعم الشرقي الأصيل. المكونات خليط من وصفة العبد الخاصة من: عسل، سمن، سكر، جوز الهند",
+      "desc_en": "El Abd Plain Basbousa is a sweet semolina cake with ghee and soaked in delicious syrup. The perfect treat for every occasion that will take your breath away."
     },
     {
       "ar": "ميكس غوايش كنافة نوتيلا ولوتس صغير",
       "price": 225,
       "category": "oriental",
       "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000610_-_415.png",
-      "en": "Ghawayesh Kunafa Mix, Nutella & Lotus, Small"
+      "en": "Ghawayesh Kunafa Mix, Nutella & Lotus, Small",
+      "slug": "ghawayesh-kunafa-mix-nutella-and-lotus-small",
+      "source_url": "https://elabdfoods.com/%D9%85%D9%8A%D9%83%D8%B3-%D8%BA%D9%88%D8%A7%D9%8A%D8%B4-%D9%83%D9%86%D8%A7%D9%81%D8%A9-%D9%86%D9%88%D8%AA%D9%8A%D9%84%D8%A7-%D9%88%D9%84%D9%88%D8%AA%D8%B3-%D8%B5%D8%BA%D9%8A%D8%B1",
+      "desc_ar": "ميكس غوايش كنافة نوتيلا ولوتس من العبد مناسبة للاذواق المختلفة",
+      "desc_en": "A mix of Konafa bites filled with Nutella and Lotus. A flavor that caters to every taste."
     },
     {
       "ar": "علبة بسكويت مشكلت ٢٤ قطعة",
       "price": 180,
       "category": "kahk-biscuits",
       "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001351_-24-_415.png",
-      "en": "Assorted Biscuits Box (24 pcs)"
+      "en": "Assorted Biscuits Box (24 pcs)",
+      "slug": "assorted-biscuits-box-24-pcs",
+      "source_url": "https://elabdfoods.com/%D8%B9%D9%84%D8%A8%D8%A9-%D8%A8%D8%B3%D9%83%D9%88%D9%8A%D8%AA-%D9%85%D8%B4%D9%83%D9%84%D8%AA-30-%D9%82%D8%B7%D8%B9%D8%A9",
+      "pieces": 24,
+      "gallery": [
+        "https://cdn.elabdfoods.com/abdproimages-blob/0000887_-24-_100.png"
+      ]
     },
     {
       "ar": "علبة بسكويت شوكولاته ٣٦ قطعة",
       "price": 170,
       "category": "kahk-biscuits",
       "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001357_-36-_415.png",
-      "en": "Chocolate Biscuits Box (36 pcs)"
+      "en": "Chocolate Biscuits Box (36 pcs)",
+      "slug": "chocolate-biscuits-box-36-pcs",
+      "source_url": "https://elabdfoods.com/%D8%B9%D9%84%D8%A8%D8%A9-%D8%A8%D8%B3%D9%83%D9%88%D9%8A%D8%AA-%D8%B4%D9%88%D9%83%D9%88%D9%84%D8%A7%D8%AA%D9%87-36-%D9%82%D8%B7%D8%B9%D8%A9",
+      "desc_ar": "الشيكولاتة هي دايما الاختيار الصح! علبة بسكويت الشيكولاتة من العبد هي انسب اختيار لمحبي الشيكولاتة",
+      "desc_en": "You can never go wrong with chocolate! El Abd Chocolate Biscuit box will fulfill all your sugar cravings.",
+      "pieces": 36,
+      "gallery": [
+        "https://cdn.elabdfoods.com/abdproimages-blob/0000881_-36-_100.png"
+      ]
     },
     {
       "ar": "بيتي فور مكسرات ٣٢ قطعة",
       "price": 245,
       "category": "kahk-biscuits",
       "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001326_-32-_415.png",
-      "en": "Petit Four with Nuts (32 pcs)"
+      "en": "Petit Four with Nuts (32 pcs)",
+      "slug": "petit-four-with-nuts-32-pcs",
+      "source_url": "https://elabdfoods.com/%D8%A8%D9%8A%D8%AA%D9%8A-%D9%81%D9%88%D8%B1-%D9%85%D9%83%D8%B3%D8%B1%D8%A7%D8%AA-28-%D9%82%D8%B7%D8%B9%D8%A9",
+      "desc_ar": "بيتي فور المكسرات من العبد بلونه الذهبي الفريد، ومكوناته الرائعة من دقيق فاخر، زبدة، سكر، شوكولاته، مربي مشمش",
+      "desc_en": "El Abd Petit Four with Nuts is available in an assortment of chocolate and vanilla, complemented by mouth watering jam and smooth chocolate.",
+      "pieces": 32
     },
     {
       "ar": "بيتي فور ممتاز ٣٢ قطعة",
       "price": 190,
       "category": "kahk-biscuits",
       "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001328_-32-_415.png",
-      "en": "Premium Petit Four (32 pcs)"
+      "en": "Premium Petit Four (32 pcs)",
+      "slug": "premium-petit-four-32-pcs",
+      "source_url": "https://elabdfoods.com/%D8%A8%D9%8A%D8%AA%D9%8A-%D9%81%D9%88%D8%B1-%D9%85%D9%85%D8%AA%D8%A7%D8%B2-28-%D9%82%D8%B7%D8%B9%D8%A9",
+      "desc_ar": "بيتي فور سادة من العبد مصنوع من أجود المكونات الدقيق والزبدة والسكر",
+      "desc_en": "El Abd Plain Petit Four is a bite-size dessert made of fine flour, butter, and sugar.",
+      "pieces": 32
     },
     {
       "ar": "علبة كحك مشكلت ١٦قطعة",
       "price": 195,
       "category": "kahk-biscuits",
       "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001334_-16_415.png",
-      "en": "Assorted Kahk Box (16 pcs)"
+      "en": "Assorted Kahk Box (16 pcs)",
+      "slug": "assorted-kahk-box-16-pcs",
+      "source_url": "https://elabdfoods.com/%D8%B9%D9%84%D8%A8%D8%A9-%D9%83%D8%AD%D9%83-%D9%85%D8%B4%D9%83%D9%84%D8%AA-16%D9%82%D8%B7%D8%B9%D8%A9",
+      "pieces": 16,
+      "gallery": [
+        "https://cdn.elabdfoods.com/abdproimages-blob/0000955_-16_100.png"
+      ]
     },
     {
       "ar": "غريبة باللوز ٣٦ قطعة",
       "price": 270,
       "category": "kahk-biscuits",
       "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001330_-36-_415.png",
-      "en": "Ghorayeba with Almonds (36 pcs)"
+      "en": "Ghorayeba with Almonds (36 pcs)",
+      "slug": "ghorayeba-with-almonds-36-pcs",
+      "source_url": "https://elabdfoods.com/%D8%BA%D8%B1%D9%8A%D8%A8%D8%A9-%D8%A8%D8%A7%D9%84%D9%84%D9%88%D8%B2-36-%D9%82%D8%B7%D8%B9%D8%A9",
+      "desc_ar": "غريبة باللوز من العبد مخبوزة على طريقة العبد الخاصة، تتميز بلونها الأبيض ومذاقها الجميل الذي يذوب بفمك سريعًا، المكونات :سمن بلدي،دقيق فاخر، لوز",
+      "desc_en": "An Egyptian staple made from traditional ghee, sugar, and flour. El Abd Ghorayeba with Almonds is an incredible treat that is loved for its mouthwatering taste.",
+      "pieces": 36,
+      "gallery": [
+        "https://cdn.elabdfoods.com/abdproimages-blob/0000937_-36-_100.png"
+      ]
     },
     {
       "ar": "منين عجوة ٢٦ قطعة",
       "price": 180,
       "category": "kahk-biscuits",
       "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001321_-26-_415.png",
-      "en": "Menen with Dates (26 pcs)"
+      "en": "Menen with Dates (26 pcs)",
+      "slug": "menen-with-dates-26-pcs",
+      "source_url": "https://elabdfoods.com/%D9%85%D9%86%D9%8A%D9%86-%D8%B9%D8%AC%D9%88%D8%A9-26-%D9%82%D8%B7%D8%B9%D8%A9",
+      "desc_ar": "يعد منين العبد من الذ المخبوزات المصرية الأصيلة ويعرف بمكوناته اللذيذة كالعجين و السمنة و السكر مضاف اليهم العجوة لتزيد من حلاوة مذاق طعمه الشرقي",
+      "desc_en": "Meneen Al Abd is one of the most delicious traditional and simple baked goods known in Egypt and the Arab world for its delicious ingredients such as dough, sugar, in addition to the agwa that adds to its tastiness.",
+      "pieces": 26,
+      "gallery": [
+        "https://cdn.elabdfoods.com/abdproimages-blob/0000929_-26-_100.png"
+      ]
     },
     {
       "ar": "منين سادة ٣٢ قطعة",
       "price": 170,
       "category": "kahk-biscuits",
       "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001322_-32-_415.png",
-      "en": "Plain Menen (32 pcs)"
+      "en": "Plain Menen (32 pcs)",
+      "slug": "plain-menen-32-pcs",
+      "source_url": "https://elabdfoods.com/%D9%85%D9%86%D9%8A%D9%86-%D8%B3%D8%A7%D8%AF%D8%A9-32-%D9%82%D8%B7%D8%B9%D8%A9",
+      "desc_ar": "يعد منين العبد من الذ المخبوزات المصرية الأصيلة ويعرف بمكوناته اللذيذة كالعجين و السمنة و السكر",
+      "desc_en": "Meneen Al Abd is one of the most delicious traditional and simple baked goods known in Egypt and the Arab world for its delicious ingredients such as dough, and sugar.",
+      "pieces": 32,
+      "gallery": [
+        "https://cdn.elabdfoods.com/abdproimages-blob/0000933_-32-_100.png"
+      ]
     },
     {
       "ar": "عبوة السعادة والتوفير ٣ قطع جاتوه",
@@ -693,7 +1091,10 @@
       "price_to": 167.4,
       "category": "value-packs",
       "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001918_-3-_415.webp",
-      "en": "Happiness Value Pack, 3 Gateaux"
+      "en": "Happiness Value Pack, 3 Gateaux",
+      "slug": "happiness-value-pack-3-gateaux",
+      "source_url": "https://elabdfoods.com/%D8%B9%D8%A8%D9%88%D8%A9-%D8%A7%D9%84%D8%B3%D8%B9%D8%A7%D8%AF%D8%A9-%D9%88-%D8%A7%D9%84%D8%AA%D9%88%D9%81%D9%8A%D8%B1-3-%D9%82%D8%B7%D8%B9-%D8%AC%D8%A7%D8%AA%D9%88%D9%87",
+      "pieces": 3
     },
     {
       "ar": "عبوة السعادة والتوفير ٦ قطع جاتوه",
@@ -701,7 +1102,13 @@
       "price_to": 360.75,
       "category": "value-packs",
       "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001919_-6-_415.webp",
-      "en": "Happiness Value Pack, 6 Gateaux"
+      "en": "Happiness Value Pack, 6 Gateaux",
+      "slug": "happiness-value-pack-6-gateaux",
+      "source_url": "https://elabdfoods.com/%D8%B9%D8%A8%D9%88%D8%A9-%D8%A7%D9%84%D8%B3%D8%B9%D8%A7%D8%AF%D8%A9-%D9%88-%D8%A7%D9%84%D8%AA%D9%88%D9%81%D9%8A%D8%B1-6-%D9%82%D8%B7%D8%B9-%D8%AC%D8%A7%D8%AA%D9%88%D9%87",
+      "desc_ar": "اكلير شوكولاتة بندق\n\nميلفيه مربي\n\nجاتوه وايت ويف\n\nميلفيه فسدق\n\nاكلير لوتس\n\nسويس رول شوكولاتة",
+      "desc_en": "Chocolate Hazelnut Eclair\n\nJam Mille-feuille\n\nWhite Wave Gateau\n\nPistachio Mille-feuille\n\nLotus Eclair\n\nChocolate Swiss Roll",
+      "translated": "en",
+      "pieces": 6
     },
     {
       "ar": "عبوة السعادة والتوفير ٣ قطع دونتس",
@@ -709,7 +1116,12 @@
       "price_to": 156.75,
       "category": "value-packs",
       "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001920_-3-_415.webp",
-      "en": "Happiness Value Pack, 3 Donuts"
+      "en": "Happiness Value Pack, 3 Donuts",
+      "slug": "happiness-value-pack-3-donuts",
+      "source_url": "https://elabdfoods.com/%D8%B9%D8%A8%D9%88%D8%A9-%D8%A7%D9%84%D8%B3%D8%B9%D8%A7%D8%AF%D8%A9-%D9%88-%D8%A7%D9%84%D8%AA%D9%88%D9%81%D9%8A%D8%B1-3-%D9%82%D8%B7%D8%B9-%D8%AF%D9%88%D9%86%D8%AA%D8%B3",
+      "desc_ar": "دونتس فيلد فسدق\n\nدونتس فيلد شوكولاتة\n\nدونتس شوكولاتة بالسبرينكلز",
+      "desc_en": "Pistachio Filled Doughnut\n\nChocolate Filled Doughnut\n\nSprinkled Chocolate Doughnut",
+      "pieces": 3
     },
     {
       "ar": "عبوة السعادة والتوفير ٦ قطع دونتس",
@@ -717,7 +1129,12 @@
       "price_to": 303.6,
       "category": "value-packs",
       "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001921_-6-_415.webp",
-      "en": "Happiness Value Pack, 6 Donuts"
+      "en": "Happiness Value Pack, 6 Donuts",
+      "slug": "happiness-value-pack-6-donuts",
+      "source_url": "https://elabdfoods.com/%D8%B9%D8%A8%D9%88%D8%A9-%D8%A7%D9%84%D8%B3%D8%B9%D8%A7%D8%AF%D8%A9-%D9%88-%D8%A7%D9%84%D8%AA%D9%88%D9%81%D9%8A%D8%B1-6-%D9%82%D8%B7%D8%B9-%D8%AF%D9%88%D9%86%D8%AA%D8%B3",
+      "desc_ar": "دونتس فيلد فسدق\n\nدونتس ريسبيرى بينك\n\nدونتس فيلد شوكولاتة\n\nدونتس شوكولاتة بالسبرينكلز\n\nدونتس فيلد كوكيز اند كريم\n\nدونتس فيلد شوكولاتة بندق",
+      "desc_en": "Pistachio Filled Doughnut\n\nRaspberry Pink Doughnut\n\nChocolate Filled Doughnut\n\nSprinkled Chocolate Doughnut\n\nCookies n Cream Filled Doughnut\n\nChocolate Hazelnut Filled Doughnut",
+      "pieces": 6
     },
     {
       "ar": "عبوة السعادة والتوفير ٣ قطع مخبوزات",
@@ -725,7 +1142,12 @@
       "price_to": 156.75,
       "category": "value-packs",
       "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001923_-3-_415.webp",
-      "en": "Happiness Value Pack, 3 Bakery Items"
+      "en": "Happiness Value Pack, 3 Bakery Items",
+      "slug": "happiness-value-pack-3-bakery-items",
+      "source_url": "https://elabdfoods.com/%D8%B9%D8%A8%D9%88%D8%A9-%D8%A7%D9%84%D8%B3%D8%B9%D8%A7%D8%AF%D8%A9-%D9%88-%D8%A7%D9%84%D8%AA%D9%88%D9%81%D9%8A%D8%B1-3-%D9%82%D8%B7%D8%B9-%D9%85%D8%AE%D8%A8%D9%88%D8%B2%D8%A7%D8%AA",
+      "desc_ar": "دانش فواكة\n\nكرواسون شوكولاتة\n\nكرواسون سادة",
+      "desc_en": "Fruit Danish\n\nChocolate Croissant\n\nPlain Croissant",
+      "pieces": 3
     },
     {
       "ar": "عبوة السعادة و التوفير ٦ قطع مخبوزات",
@@ -733,154 +1155,228 @@
       "price_to": 331.2,
       "category": "value-packs",
       "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001922_-6-_415.webp",
-      "en": "Happiness Value Pack, 6 Bakery Items"
+      "en": "Happiness Value Pack, 6 Bakery Items",
+      "slug": "happiness-value-pack-6-bakery-items",
+      "source_url": "https://elabdfoods.com/%D8%B9%D8%A8%D9%88%D8%A9-%D8%A7%D9%84%D8%B3%D8%B9%D8%A7%D8%AF%D8%A9-%D9%88-%D8%A7%D9%84%D8%AA%D9%88%D9%81%D9%8A%D8%B1-6-%D9%82%D8%B7%D8%B9-%D9%85%D8%AE%D8%A8%D9%88%D8%B2%D8%A7%D8%AA",
+      "desc_ar": "دانش فواكة\n\nدانش كريمة\n\nكرواسون شوكولاتة\n\nباتيه جبنة رومى\n\nكرواسون فسدق\n\nكرواسون سادة",
+      "desc_en": "Fruit Danish\n\nCream Danish\n\nChocolate Croissant\n\nRoumi Cheese Paté\n\nPistachio Croissant\n\nPlain Croissant",
+      "pieces": 6
     },
     {
       "ar": "قمر الدين زهرة الغوطة",
       "price": 135,
       "category": "yamish-nuts",
       "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000719_-_415.png",
-      "en": "Amar El Din, Zahrat Al Ghouta"
+      "en": "Amar El Din, Zahrat Al Ghouta",
+      "slug": "amar-el-din-zahrat-al-ghouta",
+      "source_url": "https://elabdfoods.com/%D9%82%D9%85%D8%B1-%D8%A7%D9%84%D8%AF%D9%8A%D9%86-%D8%B2%D9%87%D8%B1%D8%A9-%D8%A7%D9%84%D8%BA%D9%88%D8%B7%D8%A9"
     },
     {
       "ar": "بلح المتوكل ٩٠٠ جم",
       "price": 100,
       "category": "yamish-nuts",
       "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001273_-900-_415.png",
-      "en": "El Motawakel Dates (900 g)"
+      "en": "El Motawakel Dates (900 g)",
+      "slug": "el-motawakel-dates-900-g",
+      "source_url": "https://elabdfoods.com/%D8%A8%D9%84%D8%AD-%D8%A7%D9%84%D9%85%D8%AA%D9%88%D9%83%D9%84-900-%D8%AC%D9%85-2",
+      "weight_g": 900
     },
     {
       "ar": "زبيب ١٥٠ جرام",
       "price": 45,
       "category": "yamish-nuts",
       "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001231_-150-_415.png",
-      "en": "Raisins (150 g)"
+      "en": "Raisins (150 g)",
+      "slug": "raisins-150-g",
+      "source_url": "https://elabdfoods.com/%D8%B2%D8%A8%D9%8A%D8%A8-150-%D8%AC%D8%B1%D8%A7%D9%85",
+      "weight_g": 150
     },
     {
       "ar": "جوزهند ١٥٠ جم",
       "price": 50,
       "category": "yamish-nuts",
       "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001229_-150-_415.png",
-      "en": "Coconut (150 g)"
+      "en": "Coconut (150 g)",
+      "slug": "coconut-150-g",
+      "source_url": "https://elabdfoods.com/%D8%AC%D9%88%D8%B2%D9%87%D9%86%D8%AF-150-%D8%AC%D9%85",
+      "desc_ar": "جوزهند مبشور 150 جم",
+      "desc_en": "Grated coconut, 150 g",
+      "translated": "en",
+      "weight_g": 150
     },
     {
       "ar": "عين جمل ١٥٠ جرام",
       "price": 135,
       "category": "yamish-nuts",
       "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001242_-150-_415.png",
-      "en": "Walnuts (150 g)"
+      "en": "Walnuts (150 g)",
+      "slug": "walnuts-150-g",
+      "source_url": "https://elabdfoods.com/%D8%B9%D9%8A%D9%86-%D8%AC%D9%85%D9%84-150-%D8%AC%D8%B1%D8%A7%D9%85",
+      "weight_g": 150
     },
     {
       "ar": "كاجو محمص ١٥٠ جم",
       "price": 175,
       "category": "yamish-nuts",
       "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001246_-150-_415.png",
-      "en": "Roasted Cashews (150 g)"
+      "en": "Roasted Cashews (150 g)",
+      "slug": "roasted-cashews-150-g",
+      "source_url": "https://elabdfoods.com/%D9%83%D8%A7%D8%AC%D9%88-%D9%85%D8%AD%D9%85%D8%B5-150-%D8%AC%D9%85",
+      "weight_g": 150
     },
     {
       "ar": "لوز مقشر ١٥٠ جم",
       "price": 125,
       "category": "yamish-nuts",
       "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001234_-150-_415.png",
-      "en": "Peeled Almonds (150 g)"
+      "en": "Peeled Almonds (150 g)",
+      "slug": "peeled-almonds-150-g",
+      "source_url": "https://elabdfoods.com/%D9%84%D9%88%D8%B2-%D9%85%D9%82%D8%B4%D8%B1-150-%D8%AC%D9%85",
+      "desc_ar": "لوز امريكى 150 جرام",
+      "desc_en": "American almonds, 150 g",
+      "translated": "en",
+      "weight_g": 150
     },
     {
       "ar": "فسدق محمص ١٥٠ جرام",
       "price": 200,
       "category": "yamish-nuts",
       "img": "https://cdn.elabdfoods.com/abdproimages-blob/0001244_-150-_415.png",
-      "en": "Roasted Pistachios (150 g)"
+      "en": "Roasted Pistachios (150 g)",
+      "slug": "roasted-pistachios-150-g",
+      "source_url": "https://elabdfoods.com/%D9%81%D8%B3%D8%AF%D9%82-%D9%85%D8%AD%D9%85%D8%B5-150-%D8%AC%D8%B1%D8%A7%D9%85",
+      "weight_g": 150
     },
     {
       "ar": "بن العبد سادة فاتح ٤٠ جرام",
       "price": 50,
       "category": "coffee",
       "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002223_-40-_415.webp",
-      "en": "El Abd Plain Coffee, Light Roast (40 g)"
+      "en": "El Abd Plain Coffee, Light Roast (40 g)",
+      "slug": "el-abd-plain-coffee-light-roast-40-g",
+      "source_url": "https://elabdfoods.com/%D8%A8%D9%86-%D8%A7%D9%84%D8%B9%D8%A8%D8%AF-%D8%B3%D8%A7%D8%AF%D8%A9-%D9%81%D8%A7%D8%AA%D8%AD-40-%D8%AC%D8%B1%D8%A7%D9%85",
+      "weight_g": 40
     },
     {
       "ar": "بن العبد سادة فاتح ١٠٠ جرام",
       "price": 110,
       "category": "coffee",
       "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002242_-100-_415.webp",
-      "en": "El Abd Plain Coffee, Light Roast (100 g)"
+      "en": "El Abd Plain Coffee, Light Roast (100 g)",
+      "slug": "el-abd-plain-coffee-light-roast-100-g",
+      "source_url": "https://elabdfoods.com/%D8%A8%D9%86-%D8%A7%D9%84%D8%B9%D8%A8%D8%AF-%D8%B3%D8%A7%D8%AF%D8%A9-%D9%81%D8%A7%D8%AA%D8%AD-100-%D8%AC%D8%B1%D8%A7%D9%85",
+      "weight_g": 100
     },
     {
       "ar": "بن العبد سادة وسط ٤٠ جرام",
       "price": 50,
       "category": "coffee",
       "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002222_-40-_415.webp",
-      "en": "El Abd Plain Coffee, Medium Roast (40 g)"
+      "en": "El Abd Plain Coffee, Medium Roast (40 g)",
+      "slug": "el-abd-plain-coffee-medium-roast-40-g",
+      "source_url": "https://elabdfoods.com/%D8%A8%D9%86-%D8%A7%D9%84%D8%B9%D8%A8%D8%AF-%D8%B3%D8%A7%D8%AF%D8%A9-%D9%88%D8%B3%D8%B7-40-%D8%AC%D8%B1%D8%A7%D9%85",
+      "weight_g": 40
     },
     {
       "ar": "بن العبد سادة وسط ١٠٠ جرام",
       "price": 110,
       "category": "coffee",
       "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002253_-100-_415.webp",
-      "en": "El Abd Plain Coffee, Medium Roast (100 g)"
+      "en": "El Abd Plain Coffee, Medium Roast (100 g)",
+      "slug": "el-abd-plain-coffee-medium-roast-100-g",
+      "source_url": "https://elabdfoods.com/%D8%A8%D9%86-%D8%A7%D9%84%D8%B9%D8%A8%D8%AF-%D8%B3%D8%A7%D8%AF%D8%A9-%D9%88%D8%B3%D8%B7-100-%D8%AC%D8%B1%D8%A7%D9%85",
+      "weight_g": 100
     },
     {
       "ar": "بن العبد سادة غامق ٤٠ جرام",
       "price": 50,
       "category": "coffee",
       "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002251_-40-_415.webp",
-      "en": "El Abd Plain Coffee, Dark Roast (40 g)"
+      "en": "El Abd Plain Coffee, Dark Roast (40 g)",
+      "slug": "el-abd-plain-coffee-dark-roast-40-g",
+      "source_url": "https://elabdfoods.com/%D8%A8%D9%86-%D8%A7%D9%84%D8%B9%D8%A8%D8%AF-%D8%B3%D8%A7%D8%AF%D8%A9-%D8%BA%D8%A7%D9%85%D9%82-40-%D8%AC%D8%B1%D8%A7%D9%85",
+      "weight_g": 40
     },
     {
       "ar": "بن العبد سادة غامق ١٠٠ جرام",
       "price": 110,
       "category": "coffee",
       "img": "https://cdn.elabdfoods.com/abdproimages-blob/0002252_-100-_415.webp",
-      "en": "El Abd Plain Coffee, Dark Roast (100 g)"
+      "en": "El Abd Plain Coffee, Dark Roast (100 g)",
+      "slug": "el-abd-plain-coffee-dark-roast-100-g",
+      "source_url": "https://elabdfoods.com/%D8%A8%D9%86-%D8%A7%D9%84%D8%B9%D8%A8%D8%AF-%D8%B3%D8%A7%D8%AF%D8%A9-%D8%BA%D8%A7%D9%85%D9%82-100-%D8%AC%D8%B1%D8%A7%D9%85",
+      "weight_g": 100
     },
     {
       "ar": "ايس كراميل لاتيه - وسط",
       "price": 100,
       "category": "drinks",
       "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000979_-_415.png",
-      "en": "Iced Caramel Latte, Medium"
+      "en": "Iced Caramel Latte, Medium",
+      "slug": "iced-caramel-latte-medium",
+      "source_url": "https://elabdfoods.com/%D9%84%D8%A7%D8%AA%D9%8A%D9%87-%D9%83%D8%B1%D8%A7%D9%85%D9%8A%D9%84-%D9%88%D8%B3%D8%B7"
     },
     {
       "ar": "لاتيه فرابيه صغير",
       "price": 80,
       "category": "drinks",
       "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000508_-_415.png",
-      "en": "Latte Frappé, Small"
+      "en": "Latte Frappé, Small",
+      "slug": "latte-frappe-small",
+      "source_url": "https://elabdfoods.com/%D9%84%D8%A7%D8%AA%D9%8A%D9%87-%D9%81%D8%B1%D8%A7%D8%A8%D9%8A%D9%87-%D8%B5%D8%BA%D9%8A%D8%B1",
+      "desc_ar": "العبد لاتيه فرابيه المكون من مزيج خاص من الإسبريسو ممزوجة مع الثلج والحليب ومغطاه بالشوكولاتة",
+      "desc_en": "Get the best of both worlds with our signature drink latte frappe."
     },
     {
       "ar": "امريكان كوفى - وسط",
       "price": 65,
       "category": "drinks",
       "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000466_-_415.png",
-      "en": "American Coffee, Medium"
+      "en": "American Coffee, Medium",
+      "slug": "american-coffee-medium",
+      "source_url": "https://elabdfoods.com/%D8%A7%D9%85%D8%B1%D9%8A%D9%83%D8%A7%D9%86-%D9%83%D9%88%D9%81%D9%89-%D9%88%D8%B3%D8%B7",
+      "desc_ar": "قهوة العبد الأمريكية مشروب من القهوة يتم تحضيره من الإسبريسو و الماء الساخن",
+      "desc_en": "El Abd American coffee is a type of coffee drink prepared with non concentrated espresso shot with hot water."
     },
     {
       "ar": "شاى باللبن صغير",
       "price": 40,
       "category": "drinks",
       "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000473_-_415.png",
-      "en": "Tea with Milk, Small"
+      "en": "Tea with Milk, Small",
+      "slug": "tea-with-milk-small",
+      "source_url": "https://elabdfoods.com/%D8%B4%D8%A7%D9%89-%D8%A8%D8%A7%D9%84%D9%84%D8%A8%D9%86-%D8%B5%D8%BA%D9%8A%D8%B1"
     },
     {
       "ar": "فلات وايت - صغير",
       "price": 95,
       "category": "drinks",
       "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000474_-_415.png",
-      "en": "Flat White, Small"
+      "en": "Flat White, Small",
+      "slug": "flat-white-small",
+      "source_url": "https://elabdfoods.com/%D9%81%D9%84%D8%A7%D8%AA-%D9%88%D8%A7%D9%8A%D8%AA-%D8%B5%D8%BA%D9%8A%D8%B1",
+      "desc_ar": "قهوة العبد الفلات وايت مزيج من رغوة الحليب مع القدر المضبوط من الاسبرسو",
+      "desc_en": "El Abd flat white coffee is a blend of micro-foamed milk poured over a shot of espresso."
     },
     {
       "ar": "شاى احمر - صغير",
       "price": 25,
       "category": "drinks",
       "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000467_-_415.png",
-      "en": "Black Tea, Small"
+      "en": "Black Tea, Small",
+      "slug": "black-tea-small",
+      "source_url": "https://elabdfoods.com/%D8%B4%D8%A7%D9%89-%D8%A7%D8%AD%D9%85%D8%B1-%D8%B5%D8%BA%D9%8A%D8%B1"
     },
     {
       "ar": "موكا - صغير",
       "price": 80,
       "category": "drinks",
       "img": "https://cdn.elabdfoods.com/abdproimages-blob/0000486_-_415.png",
-      "en": "Mocha, Small"
+      "en": "Mocha, Small",
+      "slug": "mocha-small",
+      "source_url": "https://elabdfoods.com/%D9%85%D9%88%D9%83%D8%A7-%D8%B5%D8%BA%D9%8A%D8%B1",
+      "desc_ar": "موكا العبد مصنوعة بمزيج خاص من الإسبريسو، والشوكولاتة،بالإضافة إلى الحليب والكريمة",
+      "desc_en": "Indulge your senses in Al Abd Cappuccino. Made of espresso, steamed milk, and irresistible foam combined with chocolate syrup."
     }
   ],
   "currency_en": "EGP",

@@ -12,7 +12,9 @@ const SRC = path.join(ROOT, 'src');
 const site = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/site.json'), 'utf8'));
 
 const categorySlugs = site.categories.map((c) => c.slug);
-const paths = ['', 'menu', 'seasonal', 'story', 'branches', ...categorySlugs.map((s) => `menu/${s}`)];
+const season = site.seasonal[site.seasonal.active];
+const storeProductsList = [...site.best_sellers, ...site.new_products, ...site.catalog, ...season.products];
+const paths = ['', 'menu', 'seasonal', 'story', 'branches', 'cart', 'checkout', 'search', ...categorySlugs.map((s) => `menu/${s}`), ...storeProductsList.map((p) => `products/${p.slug}`)];
 
 function distFile(p) {
   return path.join(DIST, p, 'index.html');
@@ -96,14 +98,12 @@ test('T3: home hero shows the hero_photo box image with fixed dimensions, plus t
   }
 });
 
-// ---- T5 (Req 6): only /, /en/, /story, /en/story contain a <script> ----
-test('T5: <script> appears only on home and story pages, at least once each', () => {
-  const scripted = new Set(['', 'story']);
+// ---- T5 (Req 30): cart-count.js now loads on every page, so every page carries a <script> ----
+test('T5: every page carries at least one executable <script> (cart-count.js loads everywhere)', () => {
   for (const { p, lang, html } of allPages()) {
-    // JSON-LD is data, not JavaScript; only executable scripts count.
-    const has = /<script(?![^>]*type="application\/ld\+json")/.test(html);
-    if (scripted.has(p)) assert.ok(has, `expected a <script> on ${lang}/${p}`);
-    else assert.ok(!has, `unexpected <script> on ${lang}/${p}`);
+    // JSON-LD and the embedded catalog are data, not JavaScript; only executable scripts count.
+    const has = /<script(?![^>]*type="application\/(?:ld\+json|json)")/.test(html);
+    assert.ok(has, `expected a <script> on ${lang}/${p}`);
   }
 });
 

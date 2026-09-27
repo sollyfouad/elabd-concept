@@ -1,0 +1,36 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ProductCard from '../../components/ProductCard.astro';
+import site from '../../data/site.json';
+import { t, storeProducts } from '../../lib/format.js';
+import { localizeHref } from '../../lib/i18n.js';
+
+const { lang } = Astro.props;
+const { ui } = site;
+const store = ui.store;
+const pg = ui.pages.search;
+---
+<Layout title={t(pg, 'title', lang)} description={t(pg, 'description', lang)} lang={lang} cart>
+  <div class="mx-auto max-w-6xl px-4 pt-12">
+    <h1 class="font-display text-maroon text-6xl">{t(pg, 'h1', lang)}</h1>
+    <form role="search" method="get" class="mt-6 flex items-end gap-2 max-w-md">
+      <div class="flex-1">
+        <label for="search-q" class="block font-semibold">{t(store, 'search_label', lang)}</label>
+        <input id="search-q" type="search" name="q" autocomplete="off" class="min-h-11 w-full border border-maroon/30 px-2 mt-1" />
+      </div>
+      <button type="submit" class="flex items-center min-h-11 px-4 bg-maroon text-cream font-semibold hover:bg-maroon-deep">{t(store, 'search_submit', lang)}</button>
+    </form>
+    <p data-search-count role="status" data-template={t(store, 'results', lang)} class="mt-4"></p>
+    <p data-search-empty hidden class="mt-4">
+      {t(store, 'no_results', lang)} <a href={localizeHref('/menu', lang)} class="inline-flex items-center min-h-11 font-semibold text-maroon underline underline-offset-4">{t(ui.pages.menu, 'h1', lang)}</a>
+    </p>
+    <ul data-search-results class="mt-6 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-5">
+      {storeProducts.map((p) => (
+        <li data-search={`${p.ar} ${p.en}`}>
+          <ProductCard p={p} lang={lang} />
+        </li>
+      ))}
+    </ul>
+  </div>
+  <script>import '../../scripts/search.js';</script>
+</Layout>

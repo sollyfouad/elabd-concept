@@ -59,7 +59,9 @@ li:nth-child(5) .m-float { animation-delay: -4s; }
 .m-marquee {
   animation: marquee 90s linear infinite;
 }
-.m-marquee:hover,
+@media (hover: hover) {
+  .m-marquee:hover { animation-play-state: paused; }
+}
 [data-shelf]:focus-within .m-marquee,
 [data-shelf][data-paused] .m-marquee {
   animation-play-state: paused;

@@ -15,8 +15,13 @@ const ARABIC_RE = /[؀-ۿ]/;
 // Category slugs, in the same order site.json lists them.
 const categorySlugs = site.categories.map((c) => c.slug);
 
-// The 15 "P" paths from Req 2 (relative, no leading/trailing slash except '').
-const paths = ['', 'menu', 'seasonal', 'story', 'branches', ...categorySlugs.map((s) => `menu/${s}`)];
+// Every product in the four product arrays (store products), in site.json order.
+const season = site.seasonal[site.seasonal.active];
+const storeProducts = [...site.best_sellers, ...site.new_products, ...site.catalog, ...season.products];
+
+// The 15 "P" paths from Req 2 (relative, no leading/trailing slash except ''), plus the new
+// store pages: cart, checkout, search and every products/<slug>.
+const paths = ['', 'menu', 'seasonal', 'story', 'branches', 'cart', 'checkout', 'search', ...categorySlugs.map((s) => `menu/${s}`), ...storeProducts.map((p) => `products/${p.slug}`)];
 
 function distFile(p) {
   // p is '' | 'menu' | 'menu/bakery' etc (Arabic side, unprefixed)
@@ -80,9 +85,9 @@ function decodeEntities(s) {
   return s.replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;/g, "'");
 }
 
-// ---- Req 2: 30 HTML files exist ----
-test('Req 2: 30 pages exist (ar + en for each of 15 paths)', () => {
-  assert.equal(paths.length, 15, 'expected 15 base paths derived from site.json categories');
+// ---- Req 2: HTML files exist for every path (ar + en) ----
+test('Req 2: pages exist (ar + en for each path)', () => {
+  assert.equal(paths.length, 15 + 3 + storeProducts.length, 'expected 15 base paths + cart/checkout/search + one per store product');
   for (const p of paths) {
     assert.ok(fs.existsSync(distFile(p)), `missing dist/${p}/index.html`);
     assert.ok(fs.existsSync(distFileEn(p)), `missing dist/en/${p}/index.html`);
@@ -205,6 +210,20 @@ test('Req 7: English pages contain no Arabic characters (title/description/alt/a
 });
 
 // ---- Req 8: Arabic title/description match site.json ----
+function numAr(n) {
+  return Number(n).toLocaleString('ar-EG', { useGrouping: false });
+}
+function priceArFor(p) {
+  return `${numAr(p.price)}${p.price_to ? ` – ${numAr(p.price_to)}` : ''} ${site.currency_ar}`;
+}
+function truncateAr(text) {
+  const flat = text.replace(/\s+/g, ' ').trim();
+  if (flat.length <= 160) return flat;
+  let cut = flat.slice(0, 157);
+  const lastSpace = cut.lastIndexOf(' ');
+  if (lastSpace > 0) cut = cut.slice(0, lastSpace);
+  return `${cut}…`;
+}
 function arabicTitleFor(p) {
   const pg = site.ui.pages;
   if (p === '') return pg.home.title_ar;
@@ -212,6 +231,13 @@ function arabicTitleFor(p) {
   if (p === 'seasonal') return pg.seasonal.title_ar;
   if (p === 'story') return pg.story.title_ar;
   if (p === 'branches') return pg.branches.title_ar;
+  if (p === 'cart') return pg.cart.title_ar;
+  if (p === 'checkout') return pg.checkout.title_ar;
+  if (p === 'search') return pg.search.title_ar;
+  if (p.startsWith('products/')) {
+    const prod = storeProducts.find((x) => x.slug === p.slice('products/'.length));
+    return `${prod.ar} ${pg.product.title_suffix_ar}`;
+  }
   const slug = p.replace(/^menu\//, '');
   const c = site.categories.find((x) => x.slug === slug);
   return `${c.ar} ${pg.category.title_suffix_ar}`;
@@ -223,6 +249,15 @@ function arabicDescriptionFor(p) {
   if (p === 'seasonal') return pg.seasonal.description_ar;
   if (p === 'story') return pg.story.description_ar;
   if (p === 'branches') return pg.branches.description_ar;
+  if (p === 'cart') return pg.cart.description_ar;
+  if (p === 'checkout') return pg.checkout.description_ar;
+  if (p === 'search') return pg.search.description_ar;
+  if (p.startsWith('products/')) {
+    const prod = storeProducts.find((x) => x.slug === p.slice('products/'.length));
+    // Latin digits in fetched descriptions render as Arabic-Indic on Arabic pages.
+    if (prod.desc_ar) return truncateAr(prod.desc_ar.replace(/[0-9]/g, (d) => '٠١٢٣٤٥٦٧٨٩'[d]));
+    return truncateAr(pg.product.description_fallback_ar.replace('{name}', prod.ar).replace('{price}', priceArFor(prod)));
+  }
   const slug = p.replace(/^menu\//, '');
   const c = site.categories.find((x) => x.slug === slug);
   const subs = c.sub_ar || [];

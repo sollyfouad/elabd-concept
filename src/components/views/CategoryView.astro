@@ -12,7 +12,7 @@ const products = allProducts.filter((p) => p.category === c.slug);
 const subs = t(c, 'sub', lang);
 const desc = `${t(pgc, 'description_prefix', lang)} ${label(c, lang)} ${t(pgc, 'description_from', lang)}${subs.length ? `: ${subs.join(t(ui, 'list_sep', lang))}` : ''}.`;
 ---
-<Layout title={`${label(c, lang)} ${t(pgc, 'title_suffix', lang)}`} description={desc} lang={lang}>
+<Layout title={`${label(c, lang)} ${t(pgc, 'title_suffix', lang)}`} description={desc} lang={lang} cart>
   <div class="mx-auto max-w-6xl px-4 pt-12">
     <nav aria-label={t(ui, 'breadcrumb_label', lang)} class="text-sm"><a href={localizeHref('/menu', lang)} class="inline-flex items-center min-h-11 text-maroon underline underline-offset-4">{t(ui.pages.menu, 'h1', lang)}</a> / <span aria-current="page">{label(c, lang)}</span></nav>
     <h1 class="mt-3 font-display text-maroon text-6xl">{label(c, lang)}</h1>

@@ -1,0 +1,10 @@
+---
+import ProductView from '../../../components/views/ProductView.astro';
+import { storeProducts } from '../../../lib/format.js';
+
+export function getStaticPaths() {
+  return storeProducts.map((p) => ({ params: { slug: p.slug }, props: { p } }));
+}
+const { p } = Astro.props;
+---
+<ProductView lang={Astro.currentLocale} p={p} />

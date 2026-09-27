@@ -8,7 +8,9 @@ import { fileURLToPath } from 'node:url';
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DIST = path.join(ROOT, 'dist');
 const site = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/site.json'), 'utf8'));
-const paths = ['', 'menu', 'seasonal', 'story', 'branches', ...site.categories.map((c) => `menu/${c.slug}`)];
+const season = site.seasonal[site.seasonal.active];
+const storeProductsList = [...site.best_sellers, ...site.new_products, ...site.catalog, ...season.products];
+const paths = ['', 'menu', 'seasonal', 'story', 'branches', 'cart', 'checkout', 'search', ...site.categories.map((c) => `menu/${c.slug}`), ...storeProductsList.map((p) => `products/${p.slug}`)];
 const pages = paths.flatMap((p) => ['ar', 'en'].map((lang) => ({
   lang, p, html: fs.readFileSync(path.join(DIST, lang === 'en' ? 'en' : '', p, 'index.html'), 'utf8'),
 })));
@@ -23,8 +25,10 @@ test('mobile: header is sticky at the top on phones and static on desktop, with 
     const call = header.match(/<a href="tel:[^"]*" aria-label="([^"]*)"[^>]*>/);
     assert.ok(call, `${lang}/${p}: no labelled call link in header`);
     assert.equal(call[1], `${site.ui[`call_${lang}`]} ${lang === 'en' ? '17111' : '١٧١١١'}`, `${lang}/${p}: call link label`);
-    const summary = header.match(/<summary([^>]*)>([\s\S]*?)<\/summary>/);
-    assert.match(summary[1], new RegExp(`aria-label="${site.ui[`menu_toggle_${lang}`]}"`), `${lang}/${p}: menu button label`);
+    const menuToggleLabel = site.ui[`menu_toggle_${lang}`];
+    const summaries = [...header.matchAll(/<summary([^>]*)>([\s\S]*?)<\/summary>/g)];
+    const summary = summaries.find((m) => m[1].includes(`aria-label="${menuToggleLabel}"`));
+    assert.ok(summary, `${lang}/${p}: no menu <summary> found by aria-label`);
     assert.equal(summary[2].replace(/<[^>]+>/g, '').trim(), '', `${lang}/${p}: menu button should be icon-only`);
     assert.ok(classesOf(header.match(/<header[^>]*>\s*<div[^>]*>/)[0].replace(/<header[^>]*>\s*/, '')).includes('whitespace-nowrap'),
       `${lang}/${p}: header row can wrap`);

@@ -16,7 +16,7 @@ const productImg = (slug) => allProducts.find((p) => p.category === slug)?.img;
 const heroProduct = season.products.find((p) => p.hero_photo);
 if (!heroProduct) throw new Error('HomeView: no seasonal product has hero_photo: true');
 ---
-<Layout title={t(ui.pages.home, 'title', lang)} description={t(ui.pages.home, 'description', lang)} lang={lang} jsonLd>
+<Layout title={t(ui.pages.home, 'title', lang)} description={t(ui.pages.home, 'description', lang)} lang={lang} jsonLd cart>
   <!-- Hero: the season's best box on the rose lid, ribbon and logo seal along the bottom -->
   <section data-hero class="relative overflow-hidden bg-rose">
     <div aria-hidden="true" class="m-ribbon-draw absolute inset-x-0 bottom-6 h-12 bg-maroon border-y-4 border-kahk/60 flex items-center overflow-hidden whitespace-nowrap text-cream font-display text-xl">
@@ -56,7 +56,7 @@ if (!heroProduct) throw new Error('HomeView: no seasonal product has hero_photo:
       </div>
       <ul class="mt-10 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-5">
         {/* 5 cards: the first spans 2 columns below lg, so 2 and 3 columns fill with no orphan. */}
-        {season.products.map((p, i) => <li class:list={["text-cream [&_h3]:text-cream [&_p]:text-rose [&_a]:text-rose [&_article]:border-rose/30", { "col-span-2 lg:col-span-1": i === 0 }]}><ProductCard p={p} lang={lang} float={p.float === true} wide={i === 0} /></li>)}
+        {season.products.map((p, i) => <li class:list={["text-cream [&_h3]:text-cream [&_p]:text-rose [&_a]:text-rose [&_article]:border-rose/30 [&_button]:bg-rose [&_button]:text-maroon-deep [&_button]:hover:bg-cream [&_button]:hover:text-maroon-deep", { "col-span-2 lg:col-span-1": i === 0 }]}><ProductCard p={p} lang={lang} float={p.float === true} wide={i === 0} /></li>)}
       </ul>
     </div>
   </section>

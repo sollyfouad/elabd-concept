@@ -1,0 +1,131 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import site from '../../data/site.json';
+import { t, num, price, label, categoryOf, productHref } from '../../lib/format.js';
+import { localizeHref } from '../../lib/i18n.js';
+import { toPageDigits } from '../../lib/price-format.js';
+import { productData, productImage } from '../../lib/seo.js';
+
+const { lang, p } = Astro.props;
+const { ui, contact } = site;
+const store = ui.store;
+const pg = ui.pages.product;
+const cat = categoryOf(p);
+const seasonsNav = ui.nav.find((n) => n.href === '/seasonal');
+
+function flatten(text) {
+  return text.replace(/\s+/g, ' ').trim();
+}
+// Cut at the last space at or before 157 chars, then append an ellipsis; result stays <= 160 chars.
+function truncate(text) {
+  const flat = flatten(text);
+  if (flat.length <= 160) return flat;
+  let cut = flat.slice(0, 157);
+  const lastSpace = cut.lastIndexOf(' ');
+  if (lastSpace > 0) cut = cut.slice(0, lastSpace);
+  return `${cut}…`;
+}
+
+const name = label(p, lang);
+const priceLabel = price(p.price, p.price_to, lang);
+const desc = p[`desc_${lang}`] && toPageDigits(p[`desc_${lang}`], lang);
+const metaDescription = desc
+  ? truncate(desc)
+  : truncate(t(pg, 'description_fallback', lang).replace('{name}', name).replace('{price}', priceLabel));
+
+const photos = [p.img, ...(p.gallery || [])];
+
+const title = `${name} ${t(pg, 'title_suffix', lang)}`;
+
+const catalog = { [p.slug]: { name, price: p.price, ...(p.price_to != null ? { price_to: p.price_to } : {}), img: p.img, href: productHref(p, lang) } };
+---
+<Layout title={title} description={metaDescription} lang={lang} cart catalog={catalog}
+  image={productImage(p)} productLd={productData(p, lang, new URL(Astro.url.pathname, Astro.site).href)}>
+  <div class="mx-auto max-w-4xl px-4 pt-12">
+    <nav aria-label={t(ui, 'breadcrumb_label', lang)} class="text-sm">
+      {cat ? (
+        <Fragment>
+          <a href={localizeHref('/menu', lang)} class="inline-flex items-center min-h-11 text-maroon underline underline-offset-4">{t(ui.pages.menu, 'h1', lang)}</a> /
+          <a href={localizeHref(`/menu/${cat.slug}`, lang)} class="inline-flex items-center min-h-11 text-maroon underline underline-offset-4">{label(cat, lang)}</a> /
+          <span aria-current="page">{name}</span>
+        </Fragment>
+      ) : (
+        <Fragment>
+          <a href={localizeHref('/seasonal', lang)} class="inline-flex items-center min-h-11 text-maroon underline underline-offset-4">{label(seasonsNav, lang)}</a> /
+          <span aria-current="page">{name}</span>
+        </Fragment>
+      )}
+    </nav>
+
+    <div class="mt-6 grid gap-8 md:grid-cols-2">
+      <div>
+        <div class="bg-rose aspect-square">
+          <img data-gallery-main src={p.img} alt={name} width="415" height="415" class="size-full object-contain mix-blend-multiply" />
+        </div>
+        {p.gallery && (
+          <ul class="mt-3 flex flex-wrap gap-2">
+            {photos.map((photo, i) => (
+              <li>
+                <button type="button" data-gallery-thumb data-full={photo} data-alt={name} aria-pressed={i === 0 ? 'true' : 'false'}
+                  aria-label={t(store, 'photo_n', lang).replace('{i}', num(i + 1, lang)).replace('{n}', num(photos.length, lang))}
+                  class="size-16 min-h-11 min-w-11 grid place-items-center bg-rose border border-maroon/20 aria-[pressed=true]:border-maroon">
+                  <img src={photo} alt="" width="64" height="64" class="size-full object-contain mix-blend-multiply" />
+                </button>
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
+
+      <div>
+        <h1 class="font-display text-maroon text-5xl">{name}</h1>
+        <p class="mt-3 text-maroon font-semibold text-2xl">{priceLabel}</p>
+
+        <div class="mt-6">
+          <label for="qty" class="block font-semibold">{t(store, 'qty_label', lang)}</label>
+          <div class="mt-2 flex items-center gap-2">
+            <button type="button" data-qty-dec aria-label={t(store, 'qty_dec', lang)} class="flex items-center justify-center min-h-11 min-w-11 border border-maroon/30 text-maroon font-semibold hover:bg-rose">−</button>
+            <input id="qty" type="text" inputmode="numeric" value={num(1, lang)} class="min-h-11 w-16 text-center border border-maroon/30" />
+            <button type="button" data-qty-inc aria-label={t(store, 'qty_inc', lang)} class="flex items-center justify-center min-h-11 min-w-11 border border-maroon/30 text-maroon font-semibold hover:bg-rose">+</button>
+          </div>
+          <button type="button" data-add-to-cart={p.slug} data-qty-input="qty" data-name={name} data-added-template={t(store, 'added', lang)} data-added-label={t(store, 'added_short', lang)}
+            class="mt-4 flex items-center justify-center min-h-11 px-6 font-semibold bg-maroon text-cream hover:bg-maroon-deep hover:text-cream">
+            <span data-btn-label>{t(store, 'add_to_cart', lang)}</span>
+          </button>
+        </div>
+
+        <noscript>
+          <p class="mt-4"><a href={`tel:${contact.hotline}`} class="inline-flex items-center min-h-11 font-semibold text-maroon underline underline-offset-4">{t(ui, 'order', lang)} {num(contact.hotline, lang)}</a></p>
+        </noscript>
+
+        {(desc || p.weight_g || p.pieces) && (
+          <details class="group mt-8 border-t border-maroon/20 pt-2">
+            <summary class="list-none flex items-center gap-2 min-h-11 cursor-pointer [&::-webkit-details-marker]:hidden">
+              <svg aria-hidden="true" viewBox="0 0 24 24" class="size-5 shrink-0 text-maroon rtl:-scale-x-100 group-open:rotate-90 rtl:group-open:-rotate-90 transition-transform" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 6 6 6-6 6"/></svg>
+              {/* A product with a piece count is a box or pack; everything else gets a plain "Details". */}
+              <h2 class="font-display text-maroon text-2xl">{t(store, p.pieces ? 'box_h' : 'details_h', lang)}</h2>
+            </summary>
+            {(p.weight_g || p.pieces) && (
+              <dl class="mt-3 grid grid-cols-[auto_1fr] gap-x-3 gap-y-1 text-lg">
+                {p.weight_g && (
+                  <Fragment>
+                    <dt class="font-semibold">{t(store, 'weight', lang)}</dt>
+                    <dd>{num(p.weight_g, lang)} {t(store, 'grams', lang)}</dd>
+                  </Fragment>
+                )}
+                {p.pieces && (
+                  <Fragment>
+                    <dt class="font-semibold">{t(store, 'pieces', lang)}</dt>
+                    <dd>{num(p.pieces, lang)} {t(store, 'pieces_unit', lang)}</dd>
+                  </Fragment>
+                )}
+              </dl>
+            )}
+            {desc && desc.split('\n\n').map((para) => <p class="mt-2">{para}</p>)}
+          </details>
+        )}
+      </div>
+    </div>
+  </div>
+  <script>import '../../scripts/product-page.js';</script>
+</Layout>

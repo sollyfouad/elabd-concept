@@ -9,7 +9,7 @@ const season = site.seasonal[site.seasonal.active];
 const pg = site.ui.pages.seasonal;
 const { ui, contact } = site;
 ---
-<Layout title={t(pg, 'title', lang)} description={t(pg, 'description', lang)} lang={lang}>
+<Layout title={t(pg, 'title', lang)} description={t(pg, 'description', lang)} lang={lang} cart>
   <div class="bg-maroon-deep text-cream">
     <div class="mx-auto max-w-6xl px-4 py-16">
       <h1 class="font-display text-6xl md:text-7xl">{t(season, 'title', lang)}</h1>

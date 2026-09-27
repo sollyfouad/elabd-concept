@@ -1,0 +1,55 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import site from '../../data/site.json';
+import { t, num, label, productHref, storeProducts } from '../../lib/format.js';
+import { localizeHref } from '../../lib/i18n.js';
+
+const { lang } = Astro.props;
+const { ui, contact } = site;
+const store = ui.store;
+const pg = ui.pages.cart;
+
+const catalog = Object.fromEntries(storeProducts.map((p) => [p.slug, {
+  name: label(p, lang),
+  price: p.price,
+  ...(p.price_to != null ? { price_to: p.price_to } : {}),
+  img: p.img,
+  href: productHref(p, lang),
+}]));
+
+// Only the few UI strings cart-page.js needs, so the client bundle doesn't import all of site.json.
+const strings = {
+  currency: site[`currency_${lang}`],
+  total: t(store, 'total', lang),
+  from: t(store, 'from', lang),
+  line_dec: t(store, 'line_dec', lang),
+  line_qty: t(store, 'line_qty', lang),
+  line_inc: t(store, 'line_inc', lang),
+  remove: t(store, 'remove', lang),
+  removed: t(store, 'removed', lang),
+};
+---
+<Layout title={t(pg, 'title', lang)} description={t(pg, 'description', lang)} lang={lang} cart catalog={catalog}>
+  <div class="mx-auto max-w-3xl px-4 pt-12 pb-20">
+    <h1 tabindex="-1" class="font-display text-maroon text-6xl">{t(pg, 'h1', lang)}</h1>
+
+    <noscript>
+      <p class="mt-4">{t(ui, 'order', lang)} <a href={`tel:${contact.hotline}`} class="inline-flex items-center min-h-11 font-semibold text-maroon underline underline-offset-4">{num(contact.hotline, lang)}</a></p>
+    </noscript>
+
+    <div role="status" class="mt-4">
+      <p data-cart-total class="font-semibold text-lg"></p>
+    </div>
+
+    <ul data-cart-lines class="mt-6 divide-y divide-maroon/15"></ul>
+
+    <div data-cart-empty hidden class="mt-10">
+      <p class="text-lg">{t(store, 'empty', lang)}</p>
+      <a href={localizeHref('/menu', lang)} class="mt-3 inline-flex items-center min-h-11 font-semibold text-maroon underline underline-offset-4">{t(store, 'continue', lang)}</a>
+    </div>
+
+    <a data-checkout-link href={localizeHref('/checkout', lang)} class="mt-8 inline-flex items-center min-h-11 bg-maroon text-cream font-semibold px-6 hover:bg-maroon-deep">{t(store, 'checkout', lang)}</a>
+  </div>
+  <script type="application/json" id="cart-strings" set:html={JSON.stringify(strings)} />
+  <script>import '../../scripts/cart-page.js';</script>
+</Layout>
