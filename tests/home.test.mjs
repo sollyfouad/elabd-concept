@@ -39,7 +39,11 @@ test('home hero: split tagline around the real box, real facts on the ribbon, li
     }
     const status = hero.match(/<p data-open-status[^>]*>[\s\S]*?<\/p>/)[0];
     assert.ok(status.includes(`data-hours="[${site.contact.open_hours.join(',')}]"`), `${lang}: status needs the real hours`);
-    assert.ok(status.includes(site.contact[`hours_${lang}`]), `${lang}: static hours must show without JS`);
+    const fallback = site.ui.home[`order_hours_${lang}`].replace('{hours}', site.contact[`hours_${lang}`]);
+    assert.ok(status.includes(fallback), `${lang}: without JS the badge shows the hours, labelled as hotline/order hours`);
+    for (const key of ['open_now', 'closed_now', 'order_hours']) {
+      assert.match(site.ui.home[`${key}_${lang}`], lang === 'en' ? /Hotline and orders/ : /الخط الساخن والطلبات/, `${lang}: ${key} must name the hotline/orders, not the shop`);
+    }
   }
 });
 

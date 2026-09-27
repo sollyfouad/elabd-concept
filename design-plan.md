@@ -65,7 +65,7 @@ Real facts only: 1974, the story years, 11 branches, the real hours, 17111.
   down the inline-end edge; a ribbon draws in above the closing sections. CSS scroll-driven
   animations only (no JS library, no new dependency), progressive enhancement, all off under
   prefers-reduced-motion.
-- Live detail: "Open now · 10:42 in Cairo" from the real opening hours (Africa/Cairo time).
+- Live detail: "Hotline and orders open now · 10:42 PM in Cairo" from the real hotline/order hours (Africa/Cairo time).
 - Heritage becomes a spec sheet: giant ١٩٧٤ plus the story years, one line each, dotted rules.
 - Closing block: giant ١٧١١١ call-to-order, so the primary action is on the first phone screen
   and again at the end.

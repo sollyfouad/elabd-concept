@@ -23,6 +23,8 @@ const ribbon = [
 const [wordStart, wordEnd] = t(h, 'wordmark', lang);
 // English words are longer, so on phones they get a smaller vw size to keep the CTA on the first screen.
 const wordmark = ['font-display text-maroon leading-[0.95] md:text-[clamp(5rem,12vw,12rem)]', lang === 'en' ? 'text-[11vw]' : 'text-[15vw]'];
+// The hours are the hotline/order hours (listed beside 17111 on elabdfoods.com), so the badge says so.
+const orderHours = t(h, 'order_hours', lang).replace('{hours}', t(contact, 'hours', lang));
 const openStatus = {
   'data-open-status': '',
   'data-hours': JSON.stringify(contact.open_hours),
@@ -48,7 +50,7 @@ if (!heroProduct) throw new Error('HomeView: no seasonal product has hero_photo:
         <p>{t(h, 'intro_short', lang)}</p>
         <p {...openStatus} class="text-end">
           <span aria-hidden="true" class="open-dot inline-block align-middle size-2 me-1.5 rounded-full bg-maroon"></span>
-          <span data-open-text>{t(contact, 'hours', lang)}</span>
+          <span data-open-text>{orderHours}</span>
         </p>
       </div>
 
@@ -196,7 +198,7 @@ if (!heroProduct) throw new Error('HomeView: no seasonal product has hero_photo:
       </h2>
       <p {...openStatus} class="mt-8 font-semibold text-rose">
         <span aria-hidden="true" class="open-dot inline-block align-middle size-2 me-1.5 rounded-full bg-rose"></span>
-        <span data-open-text>{t(contact, 'hours', lang)}</span>
+        <span data-open-text>{orderHours}</span>
       </p>
     </div>
   </section>

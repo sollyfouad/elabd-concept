@@ -1,5 +1,5 @@
-// Home only: turns each [data-open-status] label from the static opening hours into a live
-// "Open now · 10:42 PM in Cairo". Without JS the static hours text stays.
+// Home only: turns each [data-open-status] label from the static hotline/order hours into a live
+// "Hotline and orders open now · 10:42 PM in Cairo". Without JS the static hours text stays.
 import { isOpenInCairo, cairoClock } from '../lib/open-hours.js';
 
 const lang = document.documentElement.lang === 'en' ? 'en' : 'ar';

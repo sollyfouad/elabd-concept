@@ -1,4 +1,4 @@
-// Is the shop open right now, in Cairo time? Pure: takes the date and the [opens, closes] hours
+// Are the hotline and orders open right now, in Cairo time? Pure: takes the date and the [opens, closes] hours
 // from site.json (closes may be 24 for midnight), so it is testable in node.
 const cairoParts = new Intl.DateTimeFormat('en-GB', {
   timeZone: 'Africa/Cairo',
