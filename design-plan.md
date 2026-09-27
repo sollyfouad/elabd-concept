@@ -53,3 +53,21 @@ where they cross. Huge Ruqaa h1. Nothing else on the site gets that treatment.
 - No scroll/fade animations at all; only hover colour transitions, disabled under reduced motion.
 - Numbered markers only on the Story timeline.
 - Boldness is spent on the hero ribbon; everything else is cream, maroon, and type.
+
+## Home redesign (award-level pass, Sept 2026)
+
+Concept: the hero is still the pink box lid, pushed further. The brand's own tagline is split in
+giant Ruqaa on both sides of the real Mouled box photo: "الحلو | box | صنعة". On scroll the words
+part and the box lifts toward you (the lid opening). Tone: warm heritage for family occasions.
+Real facts only: 1974, the story years, 11 branches, the real hours, 17111.
+
+- Motion signature: the ribbon. Hero ribbon scrolls real facts; a thin maroon progress ribbon runs
+  down the inline-end edge; a ribbon draws in above the closing sections. CSS scroll-driven
+  animations only (no JS library, no new dependency), progressive enhancement, all off under
+  prefers-reduced-motion.
+- Live detail: "Open now · 10:42 in Cairo" from the real opening hours (Africa/Cairo time).
+- Heritage becomes a spec sheet: giant ١٩٧٤ plus the story years, one line each, dotted rules.
+- Closing block: giant ١٧١١١ call-to-order, so the primary action is on the first phone screen
+  and again at the end.
+- Phones: tagline on one row above the box, h1 and CTAs inside the first screen, no pinning.
+- Supersedes "no scroll/fade animations" for the home page only; there are still no fade-ups.

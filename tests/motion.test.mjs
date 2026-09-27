@@ -86,7 +86,9 @@ test('T3: home hero shows the hero_photo box image with fixed dimensions, plus t
     assert.ok(img.includes(`src="${hero.img}"`), `hero photo src mismatch (${lang})`);
     assert.ok(img.includes(`alt="${hero[lang]}"`), `hero photo alt mismatch (${lang})`);
     assert.ok(img.includes(`${hero.img_large} 810w`), `hero photo srcset lacks the 810w original (${lang})`);
-    assert.match(img, /sizes="[^"]*405px/, `hero photo sizes should cap at 405px (${lang})`);
+    // The 810px original is only 2x-sharp up to 405 CSS px, so no size in `sizes` may exceed that.
+    const sizesPx = [...img.match(/sizes="([^"]*)"/)[1].matchAll(/\)\s*(\d+)px|^(\d+)px|,\s*(\d+)px/g)].map((m) => Number(m[1] || m[2] || m[3]));
+    assert.ok(sizesPx.length && Math.max(...sizesPx) <= 405, `hero photo sizes should cap at 405px (${lang}), got ${sizesPx}`);
     assert.match(img, /width="\d+"/, `hero photo needs width (${lang})`);
     assert.match(img, /height="\d+"/, `hero photo needs height (${lang})`);
     assert.doesNotMatch(img, /loading="lazy"/, `hero photo must not lazy-load (${lang})`);

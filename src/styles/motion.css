@@ -1,4 +1,5 @@
-/* Motion details: hero ribbon/logo seal, floating sweets, coffee steam, shelf marquee, story timeline. */
+/* Motion details: hero ribbon/logo seal, floating sweets, coffee steam, shelf marquee, story timeline,
+   and the home page's scroll-driven ribbon signature (progress ribbon, parting tagline, lifting box). */
 /* Convention: @keyframes K is used only by class .m-K. */
 
 :root {
@@ -17,6 +18,14 @@
 }
 .m-ribbon-draw {
   animation: ribbon-draw 1000ms cubic-bezier(.2,.7,.2,1) 1 both;
+}
+
+/* Hero ribbon: the facts scroll along it, toward the inline start */
+@keyframes ribbon-scroll {
+  to { transform: translateX(calc(-50% * var(--marquee-dir))); }
+}
+.m-ribbon-scroll {
+  animation: ribbon-scroll 70s linear infinite;
 }
 
 /* Knot settle */
@@ -101,8 +110,54 @@ li:nth-child(5) .m-float { animation-delay: -4s; }
   transform: scale(1);
 }
 
+/* Scroll-driven (home): progressive enhancement. Without scroll timelines, or with reduced motion,
+   none of this runs and the page is simply static. */
+.m-progress { display: none; }
+@keyframes progress {
+  from { transform: scaleY(0); }
+  to { transform: scaleY(1); }
+}
+@keyframes part-start {
+  to { transform: translateX(calc(-14vw * var(--marquee-dir))); }
+}
+@keyframes part-end {
+  to { transform: translateX(calc(14vw * var(--marquee-dir))); }
+}
+@keyframes lift {
+  to { transform: scale(1.18) rotate(-4deg); }
+}
+@keyframes draw-in {
+  from { clip-path: var(--ribbon-from); }
+  to { clip-path: inset(0); }
+}
+@supports (animation-timeline: scroll()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .m-progress {
+      display: block;
+      position: fixed;
+      inset-block: 0;
+      inset-inline-end: 0;
+      z-index: 40;
+      width: 3px;
+      background: var(--color-maroon);
+      transform-origin: top;
+      animation: progress linear both;
+      animation-timeline: scroll(root);
+    }
+    [data-hero] { view-timeline-name: --hero; }
+    .m-part-start { animation: part-start linear both; animation-timeline: --hero; animation-range: exit 0% exit 100%; }
+    .m-part-end { animation: part-end linear both; animation-timeline: --hero; animation-range: exit 0% exit 100%; }
+    .m-lift { animation: lift linear both; animation-timeline: --hero; animation-range: exit 0% exit 100%; }
+    .m-draw-in { animation: draw-in linear both; animation-timeline: view(); animation-range: entry 0% cover 35%; }
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .m-ribbon-draw { animation: none; clip-path: none; }
+  .m-ribbon-scroll { animation: none; transform: none; }
+  .m-progress { display: none; }
+  .m-part-start, .m-part-end, .m-lift { animation: none; transform: none; }
+  .m-draw-in { animation: none; clip-path: none; }
   .m-knot-settle { animation: none; transform: none; opacity: 1; }
   .m-float { animation: none; transform: none; }
   .m-steam { animation: none; display: none; }

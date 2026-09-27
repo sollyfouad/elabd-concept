@@ -35,7 +35,7 @@ test('mobile: header is sticky at the top on phones and static on desktop, with 
   }
 });
 
-test('mobile: phone hero has a smaller h1, a short untruncated intro, and a fixed-size photo (no layout shift)', () => {
+test('mobile: phone hero has a smaller h1, the short untruncated intro, and a fixed-size photo (no layout shift)', () => {
   for (const lang of ['ar', 'en']) {
     const hero = home(lang).match(/<section data-hero[\s\S]*?<\/section>/)[0];
     const h1 = classesOf(hero.match(/<h1[^>]*>/)[0]);
@@ -43,14 +43,15 @@ test('mobile: phone hero has a smaller h1, a short untruncated intro, and a fixe
     assert.doesNotMatch(hero, /line-clamp|truncate|text-ellipsis/, `${lang}: hero text is truncated with CSS`);
     const short = site.ui.home[`intro_short_${lang}`];
     assert.ok(short && !/…|\.\.\./.test(short), `${lang}: intro_short missing or has an ellipsis`);
-    const shortP = hero.match(/<p class="([^"]*)">([^<]*)<\/p>/);
-    assert.equal(shortP[2], short, `${lang}: phone intro should be intro_short`);
-    assert.ok(classesOf(shortP[0]).includes('md:hidden'), `${lang}: short intro must be phones-only`);
+    // The short intro is the hero's first line (top corner label) at every size, so phones always get it.
+    const shortP = hero.match(/<p(?: class="([^"]*)")?>([^<]*)<\/p>/);
+    assert.equal(shortP[2], short, `${lang}: first hero line should be intro_short`);
+    assert.doesNotMatch(shortP[0], /\bhidden\b/, `${lang}: short intro must be visible on phones`);
     const fullP = hero.match(new RegExp(`<p class="([^"]*)">${site.ui.home[`intro_${lang}`].replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}</p>`));
     assert.ok(fullP && classesOf(fullP[0]).includes('hidden') && classesOf(fullP[0]).includes('md:block'), `${lang}: full intro must be md+ only`);
     const img = hero.match(/<img[^>]*data-hero-photo[^>]*>/)[0];
     const cls = classesOf(img);
-    assert.ok(cls.includes('w-64') && cls.includes('aspect-square'), `${lang}: phone photo needs a fixed width and aspect ratio`);
+    assert.ok(cls.some((c) => /^w-(\d+)$/.test(c)) && cls.includes('aspect-square'), `${lang}: phone photo needs a fixed width and aspect ratio`);
     assert.match(img, /width="\d+" height="\d+"/, `${lang}: photo needs width/height attributes`);
   }
 });
