@@ -1,6 +1,17 @@
 @import "tailwindcss";
 @import "./motion.css";
 
+/* Fallback for Aref Ruqaa while it loads: local Times with Ruqaa's vertical metrics (ascent 1.22em,
+   descent 0.24em, measured with canvas measureText), so the swap doesn't move text (was CLS 0.29).
+   ponytail: vertical metrics only; where Times isn't installed the browser skips this face. */
+@font-face {
+  font-family: "Ruqaa Fallback";
+  src: local("Times New Roman"), local("TimesNewRomanPSMT");
+  ascent-override: 122%;
+  descent-override: 24%;
+  line-gap-override: 0%;
+}
+
 @theme {
   --color-maroon: #7A1E2C;
   --color-maroon-deep: #4E111B;
@@ -8,7 +19,7 @@
   --color-cream: #FBF6EF;
   --color-kahk: #C08A4E;
   --color-qahwa: #2B1A17;
-  --font-display: "Aref Ruqaa", Amiri, serif;
+  --font-display: "Aref Ruqaa", "Ruqaa Fallback", Amiri, serif;
   --font-sans: "IBM Plex Sans Arabic", "Segoe UI", Tahoma, "Geeza Pro", sans-serif;
 }
 

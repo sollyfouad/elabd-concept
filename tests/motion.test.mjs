@@ -84,7 +84,8 @@ test('T3: home hero shows the hero_photo box image with fixed dimensions, plus t
     assert.equal(imgs.length, 1, `expected one hero photo (${lang})`);
     const img = imgs[0];
     assert.ok(img.includes(`src="${hero.img}"`), `hero photo src mismatch (${lang})`);
-    assert.ok(img.includes(`alt="${hero[lang]}"`), `hero photo alt mismatch (${lang})`);
+    // Decorative inside the tagline link (the link's aria-label names it), so alt is empty.
+    assert.ok(img.includes('alt=""'), `hero photo should be alt="" inside the named link (${lang})`);
     assert.ok(img.includes(`${hero.img_large} 810w`), `hero photo srcset lacks the 810w original (${lang})`);
     // The 810px original is only 2x-sharp up to 405 CSS px, so no size in `sizes` may exceed that.
     const sizesPx = [...img.match(/sizes="([^"]*)"/)[1].matchAll(/\)\s*(\d+)px|^(\d+)px|,\s*(\d+)px/g)].map((m) => Number(m[1] || m[2] || m[3]));
