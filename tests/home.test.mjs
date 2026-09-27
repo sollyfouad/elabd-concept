@@ -31,8 +31,14 @@ test('home hero: split tagline around the real box, real facts on the ribbon, li
     const [w1, w2] = site.ui.home[`wordmark_${lang}`];
     assert.equal(`${w1} ${w2}`, site.brand[`tagline_${lang}`], `${lang}: wordmark must be the real tagline`);
     for (const w of [w1, w2]) {
-      assert.match(hero, new RegExp(`<p aria-hidden="true" class="m-part-(start|end)[^"]*"[^>]*>${w}</p>`), `${lang}: decorative word "${w}" must be aria-hidden`);
+      assert.match(hero, new RegExp(`<span class="m-part-(start|end)[^"]*"[^>]*>${w}</span>`), `${lang}: tagline word "${w}" missing`);
     }
+    // The tagline and box are one link to the Mouled collection, named by the visible tagline first.
+    const link = hero.match(/<a href="([^"]*)" aria-label="([^"]*)"[^>]*>(?:(?!<\/a>)[\s\S])*m-part-start(?:(?!<\/a>)[\s\S])*m-part-end[\s\S]*?<\/a>/);
+    assert.ok(link, `${lang}: tagline must be a single link wrapping both words`);
+    assert.equal(link[1], lang === 'en' ? '/en/seasonal' : '/seasonal', `${lang}: tagline link target`);
+    assert.ok(link[2].startsWith(site.brand[`tagline_${lang}`]), `${lang}: link name must start with the visible tagline`);
+    assert.ok(link[2].includes(site.ui.home[`seasonal_cta_${lang}`]), `${lang}: link name must say where it goes`);
     const ribbon = hero.match(/<span class="m-ribbon-scroll[^"]*">([\s\S]*?)<\/span><\/span>/)[1];
     for (const fact of [num(site.contact.hotline, lang), num(site.branches_ar.length, lang), num(site.brand.since, lang)]) {
       assert.ok(ribbon.includes(fact), `${lang}: ribbon missing real fact ${fact}`);

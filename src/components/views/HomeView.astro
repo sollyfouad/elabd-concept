@@ -56,17 +56,20 @@ if (!heroProduct) throw new Error('HomeView: no seasonal product has hero_photo:
         </p>
       </div>
 
-      <div class="mt-3 md:mt-4 grid grid-cols-2 md:grid-cols-[1fr_auto_1fr] items-end md:items-center gap-x-3 md:gap-x-8">
-        <p aria-hidden="true" class:list={["m-part-start col-start-1 row-start-1 justify-self-end text-end", wordmark]}>{wordStart}</p>
+      <!-- The split tagline and the box are one link to the Mouled collection. Its name starts with the
+           visible tagline (label-in-name), then says where it goes. -->
+      <a href={localizeHref('/seasonal', lang)} aria-label={`${t(brand, 'tagline', lang)}: ${t(h, 'seasonal_cta', lang)}`}
+        class="group min-h-11 mt-3 md:mt-4 grid grid-cols-2 md:grid-cols-[1fr_auto_1fr] items-end md:items-center gap-x-3 md:gap-x-8">
+        <span class:list={["m-part-start block col-start-1 row-start-1 justify-self-end text-end group-hover:text-maroon-deep transition-colors", wordmark]}>{wordStart}</span>
         <!-- The CDN original is 810px, so the photo is capped at 405px wide to stay 2x-sharp on retina.
              The shot has a white background, so it sits on a round white plate instead of being
              multiplied into the pink (which tinted and faded the box). -->
         <img data-hero-photo src={heroProduct.img} srcset={`${heroProduct.img} 415w, ${heroProduct.img_large} 810w`}
           sizes="(min-width: 768px) 384px, (min-width: 640px) 256px, 176px"
           alt={label(heroProduct, lang)} width="810" height="810" fetchpriority="high" decoding="async"
-          class="m-lift col-span-2 row-start-2 md:col-span-1 md:col-start-2 md:row-start-1 justify-self-center w-44 sm:w-64 md:w-[clamp(16rem,27vw,24rem)] aspect-square object-contain rounded-full bg-white p-3 md:p-6 ring-1 ring-maroon/15" />
-        <p aria-hidden="true" class:list={["m-part-end col-start-2 row-start-1 md:col-start-3 justify-self-start text-start", wordmark]}>{wordEnd}</p>
-      </div>
+          class="m-lift col-span-2 row-start-2 md:col-span-1 md:col-start-2 md:row-start-1 justify-self-center w-44 sm:w-64 md:w-[clamp(16rem,27vw,24rem)] aspect-square object-contain rounded-full bg-white p-3 md:p-6 ring-1 ring-maroon/15 group-hover:ring-2 group-hover:ring-maroon/40" />
+        <span class:list={["m-part-end block col-start-2 row-start-1 md:col-start-3 justify-self-start text-start group-hover:text-maroon-deep transition-colors", wordmark]}>{wordEnd}</span>
+      </a>
 
       <div class="mt-3 md:mt-6 grid gap-4 md:gap-10 md:grid-cols-[3fr_2fr] md:items-start">
         <h1 class:list={["font-display text-maroon leading-[1.15] md:text-[clamp(4rem,7vw,7.5rem)]", h1Size]}>{t(brand, 'hero', lang)}</h1>
