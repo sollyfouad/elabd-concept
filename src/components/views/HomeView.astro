@@ -3,7 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import ProductCard from '../../components/ProductCard.astro';
 import Chevron from '../../components/Chevron.astro';
 import site from '../../data/site.json';
-import { t, num, label, allProducts, mapUrl } from '../../lib/format.js';
+import { t, num, price, label, allProducts, mapUrl } from '../../lib/format.js';
 import { localizeHref } from '../../lib/i18n.js';
 
 const { lang } = Astro.props;
@@ -38,6 +38,11 @@ const openStatus = {
 const productImg = (slug) => allProducts.find((p) => p.category === slug)?.img;
 const heroProduct = season.products.find((p) => p.hero_photo);
 if (!heroProduct) throw new Error('HomeView: no seasonal product has hero_photo: true');
+// Cheapest Mouled box, stated upfront. A box is a product with a piece count (same rule as the
+// product page's "What's in the box").
+const boxPrices = season.products.filter((p) => p.pieces).map((p) => p.price);
+if (!boxPrices.length) throw new Error('HomeView: the active season has no boxes to quote a price for');
+const boxesFrom = t(h, 'boxes_from', lang).replace('{price}', price(Math.min(...boxPrices), null, lang));
 ---
 <Layout title={t(ui.pages.home, 'title', lang)} description={t(ui.pages.home, 'description', lang)} lang={lang} jsonLd cart>
   <!-- Scroll progress: a thin maroon ribbon down the inline-end edge (only where scroll timelines exist). -->
@@ -65,11 +70,12 @@ if (!heroProduct) throw new Error('HomeView: no seasonal product has hero_photo:
              The shot has a white background, so it sits on a round white plate instead of being
              multiplied into the pink (which tinted and faded the box). -->
         <img data-hero-photo src={heroProduct.img} srcset={`${heroProduct.img} 415w, ${heroProduct.img_large} 810w`}
-          sizes="(min-width: 768px) 384px, (min-width: 640px) 256px, 176px"
+          sizes="(min-width: 768px) 384px, (min-width: 640px) 256px, 160px"
           alt={label(heroProduct, lang)} width="810" height="810" fetchpriority="high" decoding="async"
-          class="m-lift col-span-2 row-start-2 md:col-span-1 md:col-start-2 md:row-start-1 justify-self-center w-44 sm:w-64 md:w-[clamp(16rem,27vw,24rem)] aspect-square object-contain rounded-full bg-white p-3 md:p-6 ring-1 ring-maroon/15 group-hover:ring-2 group-hover:ring-maroon/40" />
+          class="m-lift col-span-2 row-start-2 md:col-span-1 md:col-start-2 md:row-start-1 justify-self-center w-40 sm:w-64 md:w-[clamp(16rem,27vw,24rem)] aspect-square object-contain rounded-full bg-white p-3 md:p-6 ring-1 ring-maroon/15 group-hover:ring-2 group-hover:ring-maroon/40" />
         <span class:list={["m-part-end block col-start-2 row-start-1 md:col-start-3 justify-self-start text-start group-hover:text-maroon-deep transition-colors", wordmark]}>{wordEnd}</span>
       </a>
+      <p class="mt-2 text-center font-semibold text-maroon whitespace-nowrap">{boxesFrom}</p>
 
       <div class="mt-3 md:mt-6 grid gap-4 md:gap-10 md:grid-cols-[3fr_2fr] md:items-start">
         <h1 class:list={["font-display text-maroon leading-[1.15] md:text-[clamp(4rem,7vw,7.5rem)]", h1Size]}>{t(brand, 'hero', lang)}</h1>

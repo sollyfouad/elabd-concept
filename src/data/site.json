@@ -609,6 +609,8 @@
       "heritage_cta_en": "Read our story",
       "branches_h_en": "Your nearest branch",
       "branches_cta_en": "All branches",
+      "boxes_from_ar": "علب المولد من {price}",
+      "boxes_from_en": "Mouled boxes from {price}",
       "wordmark_ar": ["الحلو", "صنعة"],
       "wordmark_en": ["Sweets are", "a craft"],
       "since_ar": "من سنة {year}",

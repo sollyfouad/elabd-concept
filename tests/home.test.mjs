@@ -81,3 +81,17 @@ test('open-status script ships on the home pages only', () => {
     assert.ok(!scriptsOf(story).includes(marker), `${lang}: open-status script leaked onto /story`);
   }
 });
+
+test('home hero states the real lowest Mouled box price upfront', () => {
+  const season = site.seasonal[site.seasonal.active];
+  const lowest = Math.min(...season.products.filter((p) => p.pieces).map((p) => p.price));
+  assert.equal(lowest, 570, 'data check: Mouled Box 4 is the cheapest box');
+  for (const lang of ['ar', 'en']) {
+    const hero = home(lang).match(/<section data-hero[\s\S]*?<\/section>/)[0];
+    const priceText = `${num(lowest, lang)} ${site[`currency_${lang}`]}`;
+    const expected = site.ui.home[`boxes_from_${lang}`].replace('{price}', priceText);
+    assert.ok(hero.includes(expected), `${lang}: hero should say "${expected}"`);
+    // It sits right under the box link, before the h1.
+    assert.ok(hero.indexOf(expected) > hero.indexOf('m-part-end') && hero.indexOf(expected) < hero.indexOf('<h1'), `${lang}: price belongs next to the box`);
+  }
+});
