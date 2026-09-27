@@ -37,7 +37,11 @@ test('home hero: split tagline around the real box, real facts on the ribbon, li
     for (const fact of [num(site.contact.hotline, lang), num(site.branches_ar.length, lang), num(site.brand.since, lang)]) {
       assert.ok(ribbon.includes(fact), `${lang}: ribbon missing real fact ${fact}`);
     }
+    const photo = hero.match(/<img[^>]*data-hero-photo[^>]*>/)[0];
+    assert.doesNotMatch(photo, /mix-blend/, `${lang}: the white-background photo must not be multiplied into the pink`);
+    assert.match(photo, /\bbg-white\b/, `${lang}: the photo sits on a white plate`);
     const status = hero.match(/<p data-open-status[^>]*>[\s\S]*?<\/p>/)[0];
+    assert.match(status, /class="[^"]*\bwhitespace-nowrap\b/, `${lang}: the hours badge stays on one line`);
     assert.ok(status.includes(`data-hours="[${site.contact.open_hours.join(',')}]"`), `${lang}: status needs the real hours`);
     const fallback = site.ui.home[`order_hours_${lang}`].replace('{hours}', site.contact[`hours_${lang}`]);
     assert.ok(status.includes(fallback), `${lang}: without JS the badge shows the hours, labelled as hotline/order hours`);

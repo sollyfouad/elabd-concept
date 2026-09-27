@@ -38,8 +38,14 @@ test('mobile: header is sticky at the top on phones and static on desktop, with 
 test('mobile: phone hero has a smaller h1, the short untruncated intro, and a fixed-size photo (no layout shift)', () => {
   for (const lang of ['ar', 'en']) {
     const hero = home(lang).match(/<section data-hero[\s\S]*?<\/section>/)[0];
+    // The h1 is the most prominent text in the hero: bigger than the decorative tagline on phones (vw)
+    // and on md+ (every bound of the clamp).
     const h1 = classesOf(hero.match(/<h1[^>]*>/)[0]);
-    assert.ok(h1.includes('text-4xl'), `${lang}: phone h1 should be text-4xl`);
+    const word = classesOf(hero.match(/<p[^>]*class="m-part-start[^"]*"[^>]*>/)[0]);
+    const vw = (cls) => Number(cls.find((c) => /^text-\[[\d.]+vw\]$/.test(c)).match(/[\d.]+/)[0]);
+    const clamp = (cls) => cls.find((c) => c.startsWith('md:text-[clamp(')).match(/[\d.]+/g).map(Number);
+    assert.ok(vw(h1) > vw(word), `${lang}: phone h1 (${vw(h1)}vw) must be larger than the tagline (${vw(word)}vw)`);
+    clamp(h1).forEach((n, i) => assert.ok(n > clamp(word)[i], `${lang}: md+ h1 clamp ${clamp(h1)} must exceed tagline clamp ${clamp(word)}`));
     assert.doesNotMatch(hero, /line-clamp|truncate|text-ellipsis/, `${lang}: hero text is truncated with CSS`);
     const short = site.ui.home[`intro_short_${lang}`];
     assert.ok(short && !/…|\.\.\./.test(short), `${lang}: intro_short missing or has an ellipsis`);
