@@ -11,6 +11,7 @@ const { title, description, lang, jsonLd = false, productLd = null, image = site
 const pageUrl = new URL(Astro.url.pathname, Astro.site).href;
 const siteName = lang === 'en' ? site.brand.name_en : site.brand.name_ar;
 const alt = alternates(Astro.url.pathname);
+const faviconHref = import.meta.env.BASE_URL.replace(/\/$/, '') + site.brand.favicon;
 ---
 <!doctype html>
 <html lang={lang} dir={dir(lang)}>
@@ -19,8 +20,8 @@ const alt = alternates(Astro.url.pathname);
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
-    <link rel="icon" type="image/png" href={site.brand.favicon} />
-    <link rel="apple-touch-icon" href={site.brand.favicon} />
+    <link rel="icon" type="image/png" href={faviconHref} />
+    <link rel="apple-touch-icon" href={faviconHref} />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content={siteName} />
     <meta property="og:title" content={title} />
@@ -31,7 +32,7 @@ const alt = alternates(Astro.url.pathname);
     <meta property="og:locale:alternate" content={lang === 'en' ? 'ar_EG' : 'en_US'} />
     <meta name="twitter:card" content="summary_large_image" />
     {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(structuredData(lang, Astro.site))} />}
-    {productLd && <script type="application/ld+json" set:html={JSON.stringify(productLd).replace(/</g, '\\u003c')} />}
+    {productLd && <script type="application/ld+json" set:html={JSON.stringify(productLd).replace(/</g, '\u003c')} />}
     <link rel="alternate" hreflang="ar" href={new URL(alt.ar, Astro.site).href} />
     <link rel="alternate" hreflang="en" href={new URL(alt.en, Astro.site).href} />
     <link rel="alternate" hreflang="x-default" href={new URL(alt.ar, Astro.site).href} />
